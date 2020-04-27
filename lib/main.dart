@@ -30,7 +30,7 @@ class _MainPageState extends State<MainPage> {
 
   void fetchDealers() async {
     // Fake time-consumption to make sure loading message works.
-    await Future.delayed(Duration(seconds: 4));
+    await Future.delayed(Duration(seconds: 3));
     setState(() {
       _isLoading = false;
     });
