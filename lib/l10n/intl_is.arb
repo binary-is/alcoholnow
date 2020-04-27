@@ -1,0 +1,15 @@
+{
+  "@@last_modified": "2020-04-27T00:15:00.127833",
+  "heyWorld": "Hæ heimur",
+  "@heyWorld": {
+    "description": "Tilgangslaus lýsing",
+    "type": "text",
+    "placeholders": {}
+  },
+  "alcoholNow": "Er ríkið opið?",
+  "@alcoholNow": {
+    "description": "Nafnið á appinu",
+    "type": "text",
+    "placeholders": {}
+  }
+}

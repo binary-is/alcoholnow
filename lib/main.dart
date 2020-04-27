@@ -1,15 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'locale/app_localization.dart';
 
 void main() => runApp(AlcoholNowApp());
 
 class AlcoholNowApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    AppLocalizationDelegate _localeOverrideDelegate = AppLocalizationDelegate(Locale('is', 'IS'));
+
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        _localeOverrideDelegate
+      ],
+      supportedLocales: [
+        const Locale('is', 'IS'),
+        const Locale('en', 'US'),
+      ],
       home: MainPage(title: 'Alcohol Now'),
     );
   }
@@ -39,6 +53,7 @@ class _MainPageState extends State<MainPage> {
   @override
   void initState() {
     super.initState();
+    AppLocalization.load(Locale('is', 'IS'));
     fetchDealers();
   }
 
@@ -60,7 +75,7 @@ class _MainPageState extends State<MainPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
-            'This is some text that might say something.',
+            AppLocalization.of(context).heyWorld,
             style: Theme.of(context).textTheme.subhead
           ),
           Expanded(
