@@ -1,3 +1,4 @@
+import 'constants.dart' as Constants;
 import 'package:i18n_extension/i18n_extension.dart';
 
 extension Localization on String {
@@ -6,7 +7,7 @@ extension Localization on String {
     'is_is': 'Halló, heimur',
   } + {
     'en_us': 'Alcohol Now',
-    'is_is': 'Er ríkið opið?',
+    'is_is': Constants.APP_NAME,
   } + {
     'en_us': 'One',
     'is_is': 'Einn',

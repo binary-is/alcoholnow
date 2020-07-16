@@ -1,3 +1,4 @@
+import 'constants.dart' as Constants;
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:i18n_extension/i18n_widget.dart';
@@ -10,13 +11,13 @@ class AlcoholNowApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: Constants.APP_NAME,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: I18n(
         initialLocale: Locale('is', 'IS'),
-        child: MainPage(title: 'Alcohol Now'),
+        child: MainPage(),
       ),
 
       localizationsDelegates: [
@@ -33,10 +34,6 @@ class AlcoholNowApp extends StatelessWidget {
 }
 
 class MainPage extends StatefulWidget {
-  MainPage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
   @override
   _MainPageState createState() => _MainPageState();
 }
@@ -98,7 +95,7 @@ class _MainPageState extends State<MainPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text('Alcohol Now'.i18n),
       ),
       body: body
     );
