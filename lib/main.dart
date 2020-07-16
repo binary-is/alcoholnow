@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:i18n_extension/i18n_widget.dart';
+import 'main.i18n.dart';
 
 void main() => runApp(AlcoholNowApp());
 
@@ -11,7 +14,20 @@ class AlcoholNowApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MainPage(title: 'Alcohol Now'),
+      home: I18n(
+        initialLocale: Locale('is', 'IS'),
+        child: MainPage(title: 'Alcohol Now'),
+      ),
+
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+        const Locale('en', 'US'),
+        const Locale('is', 'IS'),
+      ],
     );
   }
 }
@@ -26,7 +42,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  List<String> _entries = ['One', 'Two', 'Three'];
+  List<String> _entries;
   bool _isLoading = true;
 
   void fetchDealers() async {
@@ -47,10 +63,12 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     var body;
 
+    _entries = ['One'.i18n, 'Two'.i18n, 'Three'.i18n];
+
     if (_isLoading) {
       body = Center(
         child: Text(
-          'Loading...',
+          'Loading...'.i18n,
           style: Theme.of(context).textTheme.headline
         )
       );
@@ -61,7 +79,7 @@ class _MainPageState extends State<MainPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
-            'Hello, world',
+            "Hello, world".i18n,
             style: Theme.of(context).textTheme.subhead
           ),
           Expanded(
