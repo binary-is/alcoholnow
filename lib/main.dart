@@ -4,6 +4,10 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:i18n_extension/i18n_widget.dart';
 import 'main.i18n.dart';
 
+Future<String> fetchDealers() async {
+  return Future.delayed(Duration(seconds: 3)).then((thing) => 'Some String');
+}
+
 void main() => runApp(AlcoholNowApp());
 
 class AlcoholNowApp extends StatelessWidget {
@@ -40,20 +44,12 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   List<String> _entries;
-  bool _isLoading = true;
-
-  void fetchDealers() async {
-    // Fake time-consumption to make sure loading message works.
-    await Future.delayed(Duration(seconds: 3));
-    setState(() {
-      _isLoading = false;
-    });
-  }
+  Future<String> _dealers;
 
   @override
   void initState() {
     super.initState();
-    fetchDealers();
+    _dealers = fetchDealers();
   }
 
   @override
@@ -62,36 +58,44 @@ class _MainPageState extends State<MainPage> {
 
     _entries = ['One'.i18n, 'Two'.i18n, 'Three'.i18n];
 
-    if (_isLoading) {
-      body = Center(
-        child: Text(
-          'Loading...'.i18n,
-          style: Theme.of(context).textTheme.headline
-        )
-      );
-    }
-    else {
-      body = Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Text(
-            "Hello, world".i18n,
-            style: Theme.of(context).textTheme.subhead
-          ),
-          Expanded(
-            child: ListView.builder(
-              itemCount: _entries.length,
-              itemBuilder: (context, index) {
-                return ListTile(
-                  title: Text(_entries[index])
-                );
-              },
-            )
-          ),
-        ],
-      );
-    }
+    body = FutureBuilder<String>(
+      future: _dealers,
+      builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          return Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Text(
+                "Hello, world".i18n,
+                style: Theme.of(context).textTheme.subhead
+              ),
+              Expanded(
+                child: ListView.builder(
+                  itemCount: _entries.length,
+                  itemBuilder: (context, index) {
+                    return ListTile(
+                      title: Text(_entries[index])
+                    );
+                  },
+                )
+              ),
+            ],
+          );
+
+        }
+        else if (snapshot.hasError) {
+          return Text('Error: ${snapshot.error}');
+        }
+
+        return Center(
+          child: Text(
+            'Loading...'.i18n,
+            style: Theme.of(context).textTheme.headline
+          )
+        );
+      },
+    );
 
     return Scaffold(
       appBar: AppBar(
