@@ -8,6 +8,12 @@ extension Localization on String {
   } + {
     'en_us': 'Loading...',
     'is_is': 'Hleð...',
+  } + {
+    'en_us': 'Open',
+    'is_is': 'Opið',
+  } + {
+    'en_us': 'Closed',
+    'is_is': 'Lokað',
   };
 
   String get i18n => localize(this, _t);

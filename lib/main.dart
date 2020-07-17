@@ -8,12 +8,16 @@ import 'dart:convert';
 
 class Dealer {
   final String name;
+  final String image_url;
+  final bool is_open;
 
-  Dealer({this.name});
+  Dealer({this.name, this.image_url, this.is_open});
 
   factory Dealer.fromJson(Map<String, dynamic> json) {
     return Dealer(
       name: json['Name'],
+      image_url: '${Constants.STORE_WEBSITE_URL}${json['ImageUrl']}',
+      is_open: json['isOpenNow'],
     );
   }
 }
@@ -103,8 +107,16 @@ class _MainPageState extends State<MainPage> {
                 child: ListView.builder(
                   itemCount: snapshot.data.length,
                   itemBuilder: (context, index) {
+                    final dealer = snapshot.data[index];
                     return ListTile(
-                      title: Text(snapshot.data[index].name)
+                      leading: Image.network(
+                        dealer.image_url,
+                        width: 70,
+                        height: 70,
+                        fit: BoxFit.cover,
+                      ),
+                      title: Text(dealer.name),
+                      subtitle: Text(dealer.is_open ? 'Open'.i18n : 'Closed'.i18n),
                     );
                   },
                 )
