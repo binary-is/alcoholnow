@@ -6,15 +6,6 @@ extension Localization on String {
     'en_us': 'Alcohol Now',
     'is_is': Constants.APP_NAME,
   } + {
-    'en_us': 'One',
-    'is_is': 'Einn',
-  } + {
-    'en_us': 'Two',
-    'is_is': 'Tveir',
-  } + {
-    'en_us': 'Three',
-    'is_is': 'Þrír',
-  } + {
     'en_us': 'Loading...',
     'is_is': 'Hleð...',
   };
