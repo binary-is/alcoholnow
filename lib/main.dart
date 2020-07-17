@@ -98,10 +98,7 @@ class _MainPageState extends State<MainPage> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Text(
-                "Hello, world".i18n,
-                style: Theme.of(context).textTheme.subhead
-              ),
+              // TODO: Controls.
               Expanded(
                 child: ListView.builder(
                   itemCount: snapshot.data.length,
