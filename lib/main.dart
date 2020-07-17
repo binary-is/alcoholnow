@@ -1,11 +1,46 @@
 import 'constants.dart' as Constants;
+import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:i18n_extension/i18n_widget.dart';
 import 'main.i18n.dart';
+import 'dart:convert';
 
-Future<String> fetchDealers() async {
-  return Future.delayed(Duration(seconds: 3)).then((thing) => 'Some String');
+class Dealer {
+  final String name;
+
+  Dealer({this.name});
+
+  factory Dealer.fromJson(Map<String, dynamic> json) {
+    return Dealer(
+      name: json['Name'],
+    );
+  }
+}
+
+Future<List<Dealer>> fetchDealers() async {
+
+  final response = await http.get(
+    Constants.STORE_DATA_URL,
+    headers: {
+      'Content-Type': 'application/json; charset=utf-8'
+    }
+  );
+
+  if (response.statusCode == 200) {
+    /* The JSON we receive from the store URL is a bit weird. Instead of
+     * returning JSON, it returns JSON with a single string called "d". This
+     * string then contains string-encoded JSON. We don't know why.
+     */
+    final list = json.decode(json.decode(response.body)['d']) as List;
+
+    final List<Dealer> dealers = list.map((item) => Dealer.fromJson(item)).toList();
+
+    return dealers;
+  }
+  else {
+    throw Exception('HTTP error ${response.statusCode} received while fetching stores.');
+  }
 }
 
 void main() => runApp(AlcoholNowApp());
@@ -43,8 +78,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  List<String> _entries;
-  Future<String> _dealers;
+  Future<List<Dealer>> _dealers;
 
   @override
   void initState() {
@@ -56,9 +90,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     var body;
 
-    _entries = ['One'.i18n, 'Two'.i18n, 'Three'.i18n];
-
-    body = FutureBuilder<String>(
+    body = FutureBuilder<List<Dealer>>(
       future: _dealers,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
@@ -72,10 +104,10 @@ class _MainPageState extends State<MainPage> {
               ),
               Expanded(
                 child: ListView.builder(
-                  itemCount: _entries.length,
+                  itemCount: snapshot.data.length,
                   itemBuilder: (context, index) {
                     return ListTile(
-                      title: Text(_entries[index])
+                      title: Text(snapshot.data[index].name)
                     );
                   },
                 )

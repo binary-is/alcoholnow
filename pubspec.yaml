@@ -22,6 +22,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   i18n_extension:
+  http:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
