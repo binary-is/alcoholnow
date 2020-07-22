@@ -90,6 +90,16 @@ class _MainPageState extends State<MainPage> {
     _dealers = fetchDealers();
   }
 
+  ListTile buildDealer(dealer) {
+    return ListTile(
+      leading: CircleAvatar(
+        backgroundImage: NetworkImage(dealer.image_url),
+      ),
+      title: Text(dealer.name),
+      subtitle: Text(dealer.is_open ? 'Open'.i18n : 'Closed'.i18n),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     var body;
@@ -108,13 +118,7 @@ class _MainPageState extends State<MainPage> {
                   children: ListTile.divideTiles(
                     context: context,
                     tiles: [
-                      for (var dealer in snapshot.data) ListTile(
-                        leading: CircleAvatar(
-                          backgroundImage: NetworkImage(dealer.image_url),
-                        ),
-                        title: Text(dealer.name),
-                        subtitle: Text(dealer.is_open ? 'Open'.i18n : 'Closed'.i18n),
-                      ),
+                      for (var dealer in snapshot.data) buildDealer(dealer),
                     ],
                   ).toList(),
                 ),
