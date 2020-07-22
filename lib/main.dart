@@ -104,22 +104,20 @@ class _MainPageState extends State<MainPage> {
             children: <Widget>[
               // TODO: Controls.
               Expanded(
-                child: ListView.separated(
-                  itemCount: snapshot.data.length,
-                  itemBuilder: (context, index) {
-                    final dealer = snapshot.data[index];
-                    return ListTile(
-                      leading: CircleAvatar(
-                        backgroundImage: NetworkImage(dealer.image_url),
+                child: ListView(
+                  children: ListTile.divideTiles(
+                    context: context,
+                    tiles: [
+                      for (var dealer in snapshot.data) ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: NetworkImage(dealer.image_url),
+                        ),
+                        title: Text(dealer.name),
+                        subtitle: Text(dealer.is_open ? 'Open'.i18n : 'Closed'.i18n),
                       ),
-                      title: Text(dealer.name),
-                      subtitle: Text(dealer.is_open ? 'Open'.i18n : 'Closed'.i18n),
-                    );
-                  },
-                  separatorBuilder: (context, index) {
-                    return Divider();
-                  },
-                )
+                    ],
+                  ).toList(),
+                ),
               ),
             ],
           );
