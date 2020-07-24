@@ -22,7 +22,7 @@ class Dealer {
   }
 }
 
-Future<List<Dealer>> fetchDealers() async {
+Stream<List<Dealer>> fetchDealers() async* {
 
   final response = await http.get(
     Constants.STORE_DATA_URL,
@@ -40,7 +40,7 @@ Future<List<Dealer>> fetchDealers() async {
 
     final List<Dealer> dealers = list.map((item) => Dealer.fromJson(item)).toList();
 
-    return dealers;
+    yield dealers;
   }
   else {
     throw Exception('HTTP error ${response.statusCode} received while fetching stores.');
@@ -82,12 +82,12 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  Future<List<Dealer>> _dealers;
+  Stream<List<Dealer>> _dealerStream;
 
   @override
   void initState() {
     super.initState();
-    _dealers = fetchDealers();
+    _dealerStream = fetchDealers();
   }
 
   ListTile buildDealer(dealer) {
@@ -104,8 +104,8 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     var body;
 
-    body = FutureBuilder<List<Dealer>>(
-      future: _dealers,
+    body = StreamBuilder<List<Dealer>>(
+      stream: _dealerStream,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           return Column(
