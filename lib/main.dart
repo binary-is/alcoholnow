@@ -20,6 +20,11 @@ class Dealer {
       is_open: json['isOpenNow'],
     );
   }
+
+  @override
+  String toString() {
+    return 'Dealer object named "${this.name}"';
+  }
 }
 
 Stream<List<Dealer>> fetchDealers() async* {
