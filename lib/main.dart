@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'constants.dart' as Constants;
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
@@ -27,7 +29,7 @@ class Dealer {
   }
 }
 
-Stream<List<Dealer>> fetchDealers() async* {
+Future<List<Dealer>> fetchDealers() async {
 
   final response = await http.get(
     Constants.STORE_DATA_URL,
@@ -45,7 +47,7 @@ Stream<List<Dealer>> fetchDealers() async* {
 
     final List<Dealer> dealers = list.map((item) => Dealer.fromJson(item)).toList();
 
-    yield dealers;
+    return dealers;
   }
   else {
     throw Exception('HTTP error ${response.statusCode} received while fetching stores.');
@@ -87,12 +89,14 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  Stream<List<Dealer>> _dealerStream;
+  StreamController<List<Dealer>> controller = StreamController<List<Dealer>>();
 
   @override
   void initState() {
     super.initState();
-    _dealerStream = fetchDealers();
+    fetchDealers().then((dealers) {
+      controller.add(dealers);
+    });
   }
 
   ListTile buildDealer(dealer) {
@@ -110,7 +114,7 @@ class _MainPageState extends State<MainPage> {
     var body;
 
     body = StreamBuilder<List<Dealer>>(
-      stream: _dealerStream,
+      stream: controller.stream,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           return Column(
