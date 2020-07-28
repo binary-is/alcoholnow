@@ -89,13 +89,16 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+  List<Dealer> _dealers = [];
   StreamController<List<Dealer>> controller = StreamController<List<Dealer>>();
 
   @override
   void initState() {
     super.initState();
+
     fetchDealers().then((dealers) {
-      controller.add(dealers);
+      _dealers = dealers;
+      controller.add(_dealers);
     });
   }
 
