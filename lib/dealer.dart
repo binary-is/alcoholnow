@@ -32,7 +32,7 @@ class Dealer {
 
     return Dealer(
       name: json['Name'],
-      image_url: '${Constants.STORE_WEBSITE_URL}${json['ImageUrl']}',
+      image_url: Constants.STORE_WEBSITE_URL + json['ImageUrl'],
       is_open: json['isOpenNow'],
       opens: opens,
       closes: closes,
