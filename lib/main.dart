@@ -7,19 +7,42 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:i18n_extension/i18n_widget.dart';
 import 'main.i18n.dart';
 import 'dart:convert';
+import 'package:intl/intl.dart';
 
 class Dealer {
   final String name;
   final String image_url;
   final bool is_open;
+  final DateTime opens;
+  final DateTime closes;
 
-  Dealer({this.name, this.image_url, this.is_open});
+  Dealer({this.name, this.image_url, this.is_open, this.opens, this.closes});
 
   factory Dealer.fromJson(Map<String, dynamic> json) {
+
+    // Default state of opens/closes if no info is to be had. If this is left
+    // untouched, then the dealer is not open at any time today.
+    DateTime opens = null;
+    DateTime closes = null;
+
+    // For example, the string "11 - 18" means that a dealer opens at 11:00 AM
+    // and closes at 6:00 PM.
+    final primitive_hours = json['today']['open'].split(' - ');
+
+    // If the above-mentioned format results in exactly two values, we know
+    // that opening hours apply (i.e. the store is open at some point today).
+    if (primitive_hours.length == 2) {
+      final now = DateTime.now();
+      opens = DateTime(now.year, now.month, now.day, int.parse(primitive_hours[0]));
+      closes = DateTime(now.year, now.month, now.day, int.parse(primitive_hours[1]));
+    }
+
     return Dealer(
       name: json['Name'],
       image_url: '${Constants.STORE_WEBSITE_URL}${json['ImageUrl']}',
       is_open: json['isOpenNow'],
+      opens: opens,
+      closes: closes,
     );
   }
 
@@ -103,12 +126,15 @@ class _MainPageState extends State<MainPage> {
   }
 
   ListTile buildDealer(dealer) {
+
+    final open_text = 'Open'.i18n + '. ' + 'Closes at'.i18n + ' ' + DateFormat('HH:mm').format(dealer.closes) + '.';
+
     return ListTile(
       leading: CircleAvatar(
         backgroundImage: NetworkImage(dealer.image_url),
       ),
       title: Text(dealer.name),
-      subtitle: Text(dealer.is_open ? 'Open'.i18n : 'Closed'.i18n),
+      subtitle: Text(dealer.is_open ? open_text : 'Closed'.i18n),
     );
   }
 

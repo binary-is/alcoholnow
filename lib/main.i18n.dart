@@ -14,6 +14,9 @@ extension Localization on String {
   } + {
     'en_us': 'Closed',
     'is_is': 'Lokað',
+  } + {
+    'en_us': 'Closes at',
+    'is_is': 'Lokar kl.',
   };
 
   String get i18n => localize(this, _t);
