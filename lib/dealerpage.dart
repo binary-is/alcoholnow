@@ -57,16 +57,24 @@ class _DealerPageState extends State<DealerPage> {
       // Configure the text explaining that the dealer is closed and indicate
       // when it opens again if such information is available.
 
-      sign = TextSpan(
-        text: 'Closed!'.i18n,
-        style: TextStyle(color: Colors.red),
-      );
-
-      if (dealer.today != null) {
-        // If dealer.today is not null, then the store either was, or is open today.
-        if (dealer.today.opens.isAfter(now)) {
-          description += 'Opens at '.i18n + clock(dealer.today.opens);
-          description += ' and closes at '.i18n + clock(dealer.today.closes) + '.';
+      if (dealer.today != null && dealer.today.opens.isAfter(now)) {
+        sign = TextSpan(
+          text: 'Opens later today!'.i18n,
+          style: TextStyle(color: Colors.green),
+        );
+        description += 'Opens at '.i18n + clock(dealer.today.opens);
+        description += ' and closes at '.i18n + clock(dealer.today.closes) + '.';
+      }
+      else {
+        sign = TextSpan(
+          text: 'Closed!'.i18n,
+          style: TextStyle(color: Colors.red),
+        );
+        if (dealer.today == null) {
+          description = 'Closed all day.'.i18n;
+        }
+        else {
+          description = 'Closed at '.i18n + clock(dealer.today.closes) + '.';
         }
       }
 
