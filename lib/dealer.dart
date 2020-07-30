@@ -1,46 +1,27 @@
 import 'Constants.dart' as Constants;
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'timing.dart' as Timing;
+import 'timing.dart';
 
 class Dealer {
   final String name;
   final String image_url;
-  final DateTime opens;
-  final DateTime closes;
+  final OpeningHours today;
 
-  Dealer({this.name, this.image_url, this.opens, this.closes});
+  Dealer({this.name, this.image_url, this.today});
 
   factory Dealer.fromJson(Map<String, dynamic> json) {
-
-    // Default state of opens/closes if no info is to be had. If this is left
-    // untouched, then the dealer is not open at any time today.
-    DateTime opens = null;
-    DateTime closes = null;
-
-    // For example, the string "11 - 18" means that a dealer opens at 11:00 AM
-    // and closes at 6:00 PM.
-    final primitive_hours = json['today']['open'].split(' - ');
-
-    // If the above-mentioned format results in exactly two values, we know
-    // that opening hours apply (i.e. the store is open at some point today).
-    if (primitive_hours.length == 2) {
-      final now = Timing.now();
-      opens = DateTime(now.year, now.month, now.day, int.parse(primitive_hours[0]));
-      closes = DateTime(now.year, now.month, now.day, int.parse(primitive_hours[1]));
-    }
 
     return Dealer(
       name: json['Name'],
       image_url: Constants.STORE_WEBSITE_URL + json['ImageUrl'],
-      opens: opens,
-      closes: closes,
+      today: OpeningHours.fromPrimitive(json['today']['open']),
     );
   }
 
   bool isOpen() {
-    final now = Timing.now();
-    return now.isAfter(opens) && now.isBefore(closes);
+    final now = getNow();
+    return now.isAfter(today.opens) && now.isBefore(today.closes);
   }
 
   @override

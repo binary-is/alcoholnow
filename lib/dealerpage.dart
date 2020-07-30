@@ -25,7 +25,7 @@ class _DealerPageState extends State<DealerPage> {
 
   ListTile buildDealer(dealer) {
 
-    final open_text = 'Open'.i18n + '. ' + 'Closes at'.i18n + ' ' + DateFormat('HH:mm').format(dealer.closes) + '.';
+    final open_text = 'Open'.i18n + '. ' + 'Closes at'.i18n + ' ' + DateFormat('HH:mm').format(dealer.today.closes) + '.';
 
     return ListTile(
       leading: CircleAvatar(
