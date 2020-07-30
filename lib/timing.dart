@@ -36,7 +36,9 @@ class OpeningHours {
 }
 
 DateTime getNow() {
-  return DateTime.now();
+  DateTime now = DateTime.now();
+  //now = now.add(Duration(hours: -2));
+  return now;
 }
 
 DateTime dayAfter(dt) {
