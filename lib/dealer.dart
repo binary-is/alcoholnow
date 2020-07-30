@@ -1,15 +1,15 @@
 import 'Constants.dart' as Constants;
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'timing.dart' as Timing;
 
 class Dealer {
   final String name;
   final String image_url;
-  final bool is_open;
   final DateTime opens;
   final DateTime closes;
 
-  Dealer({this.name, this.image_url, this.is_open, this.opens, this.closes});
+  Dealer({this.name, this.image_url, this.opens, this.closes});
 
   factory Dealer.fromJson(Map<String, dynamic> json) {
 
@@ -25,7 +25,7 @@ class Dealer {
     // If the above-mentioned format results in exactly two values, we know
     // that opening hours apply (i.e. the store is open at some point today).
     if (primitive_hours.length == 2) {
-      final now = DateTime.now();
+      final now = Timing.now();
       opens = DateTime(now.year, now.month, now.day, int.parse(primitive_hours[0]));
       closes = DateTime(now.year, now.month, now.day, int.parse(primitive_hours[1]));
     }
@@ -33,10 +33,14 @@ class Dealer {
     return Dealer(
       name: json['Name'],
       image_url: Constants.STORE_WEBSITE_URL + json['ImageUrl'],
-      is_open: json['isOpenNow'],
       opens: opens,
       closes: closes,
     );
+  }
+
+  bool isOpen() {
+    final now = Timing.now();
+    return now.isAfter(opens) && now.isBefore(closes);
   }
 
   @override

@@ -32,7 +32,7 @@ class _DealerPageState extends State<DealerPage> {
         backgroundImage: NetworkImage(dealer.image_url),
       ),
       title: Text(dealer.name),
-      subtitle: Text(dealer.is_open ? open_text : 'Closed'.i18n + '.'),
+      subtitle: Text(dealer.isOpen() ? open_text : 'Closed'.i18n + '.'),
     );
   }
 
