@@ -2,6 +2,7 @@ import 'constants.dart' as Constants;
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'timing.dart';
+import 'dart:io';
 
 class Dealer {
   final String name;
@@ -51,7 +52,9 @@ Future<List<Dealer>> fetchDealers() async {
     return dealers;
   }
   else {
-    throw Exception('HTTP error ${response.statusCode} received while fetching stores.');
+    throw HttpException(
+      'Unexpectectly received HTTP code ${response.statusCode} when expecting 200.',
+    );
   }
 }
 

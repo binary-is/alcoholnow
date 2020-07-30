@@ -20,6 +20,17 @@ class _DealerPageState extends State<DealerPage> {
     fetchDealers().then((dealers) {
       _dealers = dealers;
       controller.add(_dealers);
+    }).catchError((e) {
+      final String errorClass = e.runtimeType.toString();
+      if (errorClass == 'SocketException') {
+        controller.addError('The internet broke or something.'.i18n);
+      }
+      else if (errorClass == 'HttpException') {
+        controller.addError('Remote server is drunk.'.i18n);
+      }
+      else {
+        controller.addError(e.toString());
+      }
     });
   }
 
@@ -112,7 +123,23 @@ class _DealerPageState extends State<DealerPage> {
 
         }
         else if (snapshot.hasError) {
-          return Text('Error: ${snapshot.error}');
+          return Container(
+            padding: EdgeInsets.all(20),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                 'Error:'.i18n,
+                  style: Theme.of(context).textTheme.headline6,
+                ),
+                Text(
+                  snapshot.error.toString(),
+                  style: Theme.of(context).textTheme.body1,
+                ),
+              ],
+            ),
+          );
         }
 
         return Center(
