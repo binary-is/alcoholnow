@@ -23,6 +23,15 @@ extension Localization on String {
   } + {
     'en_us': 'Closes at ',
     'is_is': 'Lokar kl. ',
+  } + {
+    'en_us': 'Error:',
+    'is_is': 'Villa:',
+  } + {
+    'en_us': 'Remote server is drunk.',
+    'is_is': 'Netþjónninn er ölvaður.',
+  } + {
+    'en_us': 'The internet broke or something.',
+    'is_is': 'Internetið er eitthvað beyglað.',
   };
 
   String get i18n => localize(this, _t);
