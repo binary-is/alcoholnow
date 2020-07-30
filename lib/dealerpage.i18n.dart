@@ -9,17 +9,20 @@ extension Localization on String {
     'en_us': 'Loading...',
     'is_is': 'Hleð...',
   } + {
-    'en_us': 'Open. Closes at ',
-    'is_is': 'Opið. Lokar kl. ',
+    'en_us': 'Open!',
+    'is_is': 'Opið!',
   } + {
-    'en_us': 'Closed.',
-    'is_is': 'Lokað.',
+    'en_us': 'Closed!',
+    'is_is': 'Lokað!',
   } + {
-    'en_us': ' Opens at ',
-    'is_is': ' Opnar kl. ',
+    'en_us': 'Opens at ',
+    'is_is': 'Opnar kl. ',
   } + {
     'en_us': ' and closes at ',
     'is_is': ' og lokar kl. ',
+  } + {
+    'en_us': 'Closes at ',
+    'is_is': 'Lokar kl. ',
   };
 
   String get i18n => localize(this, _t);
