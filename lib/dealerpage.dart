@@ -1,3 +1,4 @@
+import 'constants.dart' as Constants;
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'dealer.dart';
@@ -100,7 +101,7 @@ class _DealerPageState extends State<DealerPage> {
 
           final List<ListTile> tiles = [];
           for (var dealer in snapshot.data) {
-            if (dealer.isOpen()) {
+            if (dealer.isOpen() || !Constants.HIDE_CLOSED) {
               tiles.add(buildDealer(dealer));
             }
           }
