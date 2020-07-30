@@ -9,14 +9,11 @@ extension Localization on String {
     'en_us': 'Loading...',
     'is_is': 'Hleð...',
   } + {
-    'en_us': 'Open',
-    'is_is': 'Opið',
+    'en_us': 'Open. Closes at ',
+    'is_is': 'Opið. Lokar kl. ',
   } + {
-    'en_us': 'Closed',
-    'is_is': 'Lokað',
-  } + {
-    'en_us': 'Closes at',
-    'is_is': 'Lokar kl.',
+    'en_us': 'Closed.',
+    'is_is': 'Lokað.',
   };
 
   String get i18n => localize(this, _t);
