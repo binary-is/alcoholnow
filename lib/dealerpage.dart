@@ -86,6 +86,14 @@ class _DealerPageState extends State<DealerPage> {
       stream: controller.stream,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
+
+          final List<ListTile> tiles = [];
+          for (var dealer in snapshot.data) {
+            if (dealer.isOpen()) {
+              tiles.add(buildDealer(dealer));
+            }
+          }
+
           return Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -95,9 +103,7 @@ class _DealerPageState extends State<DealerPage> {
                 child: ListView(
                   children: ListTile.divideTiles(
                     context: context,
-                    tiles: [
-                      for (var dealer in snapshot.data) buildDealer(dealer),
-                    ],
+                    tiles: tiles,
                   ).toList(),
                 ),
               ),
