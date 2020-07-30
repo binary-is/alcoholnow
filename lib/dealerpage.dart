@@ -33,7 +33,7 @@ class _DealerPageState extends State<DealerPage> {
 
     // Configure the text explaining that the dealer is closed and indicate
     // when it opens again if such information is available.
-    String closed_text = 'Closed.';
+    String closed_text = 'Closed.'.i18n;
     if (dealer.today != null) {
       // If dealer.today is not null, then the store either was, or is open today.
       if (dealer.today.opens.isAfter(now)) {
