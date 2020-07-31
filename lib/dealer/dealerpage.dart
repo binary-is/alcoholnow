@@ -1,9 +1,9 @@
-import 'constants.dart' as Constants;
 import 'dart:async';
-import 'package:flutter/material.dart';
-import 'dealer.dart';
 import 'dealerpage.i18n.dart';
-import 'timing.dart';
+import 'dealer.dart';
+import 'package:flutter/material.dart';
+import '../constants.dart' as Constants;
+import '../timing.dart';
 
 class DealerPage extends StatefulWidget {
   @override

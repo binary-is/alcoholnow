@@ -1,5 +1,5 @@
-import 'constants.dart' as Constants;
 import 'package:i18n_extension/i18n_extension.dart';
+import '../constants.dart' as Constants;
 
 extension Localization on String {
   static var _t = Translations('en_us') + {

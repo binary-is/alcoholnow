@@ -1,8 +1,8 @@
-import 'constants.dart' as Constants;
 import 'dart:convert';
-import 'package:http/http.dart' as http;
-import 'timing.dart';
 import 'dart:io';
+import 'package:http/http.dart' as http;
+import '../constants.dart' as Constants;
+import '../timing.dart';
 
 class Dealer {
   final String name;

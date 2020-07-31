@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
 import 'constants.dart' as Constants;
+import 'dealer/dealerpage.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:i18n_extension/i18n_widget.dart';
-import 'dealerpage.dart';
 
 void main() => runApp(AlcoholNowApp());
 
