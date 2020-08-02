@@ -50,7 +50,7 @@ class _DealerPageState extends State<DealerPage> {
         style: TextStyle(color: Colors.green),
       );
 
-      description = 'Closes at '.i18n + clock(dealer.today.closes) + '.';
+      description = 'Closes at %s.'.i18n.fill([clock(dealer.today.closes)]);
 
     }
     else {
@@ -62,8 +62,10 @@ class _DealerPageState extends State<DealerPage> {
           text: 'Opens later today!'.i18n,
           style: TextStyle(color: Colors.green),
         );
-        description += 'Opens at '.i18n + clock(dealer.today.opens);
-        description += ' and closes at '.i18n + clock(dealer.today.closes) + '.';
+        description += 'Opens at %s and closes at %s.'.i18n.fill([
+          clock(dealer.today.opens),
+          clock(dealer.today.closes)
+        ]);
       }
       else {
         sign = TextSpan(
@@ -74,7 +76,7 @@ class _DealerPageState extends State<DealerPage> {
           description = 'Closed all day.'.i18n;
         }
         else {
-          description = 'Closed at '.i18n + clock(dealer.today.closes) + '.';
+          description = 'Closed at %s.'.i18n.fill([clock(dealer.today.closes)]);
         }
       }
 

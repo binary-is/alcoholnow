@@ -18,17 +18,14 @@ extension Localization on String {
     'en_us': 'Closed!',
     'is_is': 'Lokað!',
   } + {
-    'en_us': 'Opens at ',
-    'is_is': 'Opnar kl. ',
-  } + {
-    'en_us': ' and closes at ',
-    'is_is': ' og lokar kl. ',
+    'en_us': 'Opens at %s and closes at %s.',
+    'is_is': 'Opnar kl. %s og lokar kl. %s.',
   } + {
     'en_us': 'Closes at ',
     'is_is': 'Lokar kl. ',
   } + {
-    'en_us': 'Closed at ',
-    'is_is': 'Lokaði kl. ',
+    'en_us': 'Closed at %s.',
+    'is_is': 'Lokaði kl. %s.',
   } + {
     'en_us': 'Closed all day.',
     'is_is': 'Lokað í allan dag.',
@@ -44,4 +41,5 @@ extension Localization on String {
   };
 
   String get i18n => localize(this, _t);
+  String fill(List<Object> params) => localizeFill(this, params);
 }
