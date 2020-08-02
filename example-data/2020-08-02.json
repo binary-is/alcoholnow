@@ -1,0 +1,3980 @@
+[
+  {
+    "NewsID":"208",
+    "Name":"Akranes",
+    "Email":"akranes[hja]vinbudin.is",
+    "Phone":"560-7861",
+    "Address":"Kalmansvellir 1 , 300 Akranes",
+    "PostCode":"300",
+    "Size":"300",
+    "Manager":"Guðný Ársælsdóttir",
+    "AssistantManager":"Harpa Sif Þráinsdóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in/@64.3255813,-22.0696623,17z/data=!4m5!3m4!1s0x48d5ddbd86cd0503:0x49d26f4c2d72df25!8m2!3d64.3243286!4d-22.0671839",
+    "GPSN":"64.3242661",
+    "GPSW":"-22.0664684",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"12-18",
+    "WinterFriday":"11-19",
+    "WinterSaturday":"11-14",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort.JPG",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/Akranes_frett.jpg",
+    "ImageText":"Vínbúðin á Akranesi",
+    "Preview":"Vínbúðin Akranesi, sími 560 7861u003cbru003ernOpið: mán-fim 11-18 / fös 11-19 / Lau 11 - 16",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-208",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 16",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"207",
+    "Name":"Akureyri",
+    "Email":"akureyri[hja]vinbudin.is",
+    "Phone":"560-7850",
+    "Address":"Hólabraut 16, 600 Akureyri",
+    "PostCode":"600",
+    "Size":"800",
+    "Manager":"Elsa Ágústa Eysteinsdóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Akureyri/@65.684421,-18.093608,17z/data=!3m1!4b1!4m2!3m1!1s0x48d28f09147a605b:0x874d6a5ed3c16e84",
+    "GPSN":"65.684379",
+    "GPSW":"-18.093192",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-18",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Akureyri_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Akureyri2017_2.jpg",
+    "ImageText":"Vínbúðin Akureyri",
+    "Preview":"Vínbúðin Akureyri, sími 560-7850u003cbru003ernOpið: mán-fim 11-18 / fös 11-19 / lau 11-18.",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-207",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"204",
+    "Name":"Austurstræti",
+    "Email":"austurstraeti[hja]vinbudin.is",
+    "Phone":"560-7828",
+    "Address":"Austurstræti 10a, 101 Reykjavík",
+    "PostCode":"101",
+    "Size":"600",
+    "Manager":"",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Austurstr%C3%A6ti/@64.147713,-21.939551,18z/data=!4m2!3m1!1s0x48d60b2d14dbec77:0x9b05a9db2aed7ae7",
+    "GPSN":"64.147684",
+    "GPSW":"-21.939573",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-18",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Austurstraeti_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Austurstr_ti_230px.jpg",
+    "ImageText":"Vínbúðin Austurstræti",
+    "Preview":"Vínbúðin Austurstræti, sími 560-7828u003cbru003ernOpið: mán-fim 11-18 / fös 11-19 / Lau 11-18",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-204",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"211",
+    "Name":"Álfrún (Hafnarfirði)",
+    "Email":"hafnarfjordur[hja]vinbudin.is ",
+    "Phone":"560-7837",
+    "Address":"Helluhrauni 16-18, 220 Hafnarfjörður",
+    "PostCode":"220",
+    "Size":"ALLT",
+    "Manager":"Ari Eggertsson",
+    "AssistantManager":"Atli Örn Gunnarsson",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in/@64.077258,-21.9427612,17z/data=!4m5!1m2!2m1!1zdsOtbmLDusOwaW4gaGFmbmFyZmlyw7Bp!3m1!1s0x0:0xc463c2b35729efba",
+    "GPSN":"64.076940",
+    "GPSW":"-21.941696",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-18",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Alfrun_kort_3.JPG",
+    "ImageUrl":"/Portaldata/1/Resources/frettir/2014/Hafn_flytur.jpg",
+    "ImageText":"Vínbúðin Hafnarfirði",
+    "Preview":"Vínbúðin Álfrún, sími 560-7837u003cbru003ernOpið: mán-fim 11-18 / fös 11-19 / Lau 11-18",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-211",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"209",
+    "Name":"Blönduós",
+    "Email":"blonduos[hja]vinbudin.is",
+    "Phone":"560-7870",
+    "Address":"Húnabraut 5, 540 Blönduós",
+    "PostCode":"540",
+    "Size":"200",
+    "Manager":"Stefán Haraldsson",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Bl%C3%B6ndu%C3%B3si/@65.659592,-20.302139,17z/data=!3m1!4b1!4m2!3m1!1s0x48d341f9e7189703:0x7c9d8deb4b853969",
+    "GPSN":"65.659836",
+    "GPSW":"-20.286878",
+    "MondayToThursday":"14-18",
+    "Friday":"12-19",
+    "Saturday":"11-14",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Blonduos_kort2015.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Blonduos_2015.jpg",
+    "ImageText":"Vínbúðin Blönduósi",
+    "Preview":"Vínbúðin Blönduósi, sími 560-7870u003cbru003ernOpið: Mán til fim: 14 – 18 / Fös: 12 – 19 / Lau: 11 – 14",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-209",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"12 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 14",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"219",
+    "Name":"Borgarnes",
+    "Email":"borgarnes[hja]vinbudin.is",
+    "Phone":"560-7862",
+    "Address":"Borgarbraut 58-60, 310 Borgarnes ",
+    "PostCode":"310",
+    "Size":"300",
+    "Manager":"Emilía Ingadóttir",
+    "AssistantManager":"Eygló Hulda Óskarsdóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Borgarnesi/@64.543186,-21.911781,17z/data=!3m1!4b1!4m2!3m1!1s0x48d5c899673adad3:0x4fef25daa4f325b9",
+    "GPSN":"64.543206",
+    "GPSW":"-21.911887",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Brogarnes_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Borgarnes_230px.jpg",
+    "ImageText":"Vínbúðin Borgarnesi",
+    "Preview":"Vínbúðin Borgarnesi, sími 560-7862u003cbru003e rnOpið: Mán til fim: 11 – 18 / Fös: 11 – 19 / Lau: 11 – 16rn",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-219",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 16",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"601",
+    "Name":"Borgartún",
+    "Email":"borgartun[hja]vinbudin.is",
+    "Phone":"560-7840",
+    "Address":"Borgartúni 26, 105 Reykjavík",
+    "PostCode":"105",
+    "Size":"600",
+    "Manager":"",
+    "AssistantManager":"Valgerður A. Jóhannesdóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Borgart%C3%BAni/@64.145733,-21.898402,17z/data=!3m1!4b1!4m2!3m1!1s0x48d674c698bd5911:0x7920f46b0e624f1f",
+    "GPSN":"64.145809",
+    "GPSW":"-21.897930",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-18",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Borgartun_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Borgart_n_230px.jpg",
+    "ImageText":"Vínbúðin Borgartúni",
+    "Preview":"Vínbúðin Borgartúni, sími 560-7840u003cbru003ernOpið: mán-fim 11-18 / fös 11-19 / Lau 11-18",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-601",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"220",
+    "Name":"Búðardalur",
+    "Email":"budardalur[hja]vinbudin.is",
+    "Phone":"560-7863",
+    "Address":"Vesturbraut 15, 370 Búðardalur",
+    "PostCode":"370",
+    "Size":"100",
+    "Manager":"Rosemary Lilja Ríkharðsdóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+B%C3%BA%C3%B0ardal/@65.110607,-21.76295,17z/data=!3m1!4b1!4m2!3m1!1s0x48d4f9989e760e3d:0xab04c021f933eb98",
+    "GPSN":"65.110768",
+    "GPSW":"-21.762805",
+    "MondayToThursday":"16-18",
+    "Friday":"13-19",
+    "Saturday":"12-14",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"16-18",
+    "WinterFriday":"13-19",
+    "WinterSaturday":"lokað",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Budardalur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/B__ardalur_230px.jpg",
+    "ImageText":"Vínbúðin Búðardal",
+    "Preview":"Vínbúðin Búðardal, sími 560-7863u003cbru003ernOpið: Mán til fim: 16 – 18 / Fös: 13 – 19 / Lau: 12 – 14",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-220",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"12 - 14",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"205",
+    "Name":"Dalvegur",
+    "Email":"dalvegur[hja]vinbudin.is",
+    "Phone":"560-7832",
+    "Address":"Dalvegi 2, 201 Kópavogur",
+    "PostCode":"200",
+    "Size":"800",
+    "Manager":"Anna María",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/search/v%C3%ADnb%C3%BA%C3%B0in+dalvegi/@64.1040616,-21.8724382,15z",
+    "GPSN":"64.104466",
+    "GPSW":"-21.876640",
+    "MondayToThursday":"u003cbu003e10u003c/bu003e-20",
+    "Friday":"u003cbu003e10u003c/bu003e-20",
+    "Saturday":"11-18",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Dalvegur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Dalvegur_2015_300x300.jpg",
+    "ImageText":"Vínbúðin Dalvegi",
+    "Preview":"Vínbúðin Dalvegi, sími 560-7832u003cbru003ernOpið: mán-fös 10-20 / Lau 11-18",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-205",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"10 - 20",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"10 - 20",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"10 - 20",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"10 - 20",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"221",
+    "Name":"Dalvík",
+    "Email":"dalvik[hja]vinbudin.is",
+    "Phone":"560-7871",
+    "Address":"Hafnarbraut 7, 620 Dalvík",
+    "PostCode":"620",
+    "Size":"200",
+    "Manager":"Anna Kristín Ragnarsdóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Dalv%C3%ADk/@65.971801,-18.529472,17z/data=!3m1!4b1!4m2!3m1!1s0x48d2beb6db5e1e8f:0xf383eee468d8cb08",
+    "GPSN":"65.971799",
+    "GPSW":"-18.529493",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-14",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"12-18",
+    "WinterFriday":"11-19",
+    "WinterSaturday":"11-14",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Dalvik_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Dalvik_2018_230x230.jpg",
+    "ImageText":"Vínbúðin Dalvík",
+    "Preview":"Vínbúðin Dalvík, sími 560-7871u003cbru003ernOpið: Mán til fim: 11 – 18 / Fös: 11 – 19 / Lau: 11 – 14.",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-221",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 14",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"222",
+    "Name":"Djúpivogur",
+    "Email":"djupivogur[hja]vinbudin.is",
+    "Phone":"560-7876",
+    "Address":"Búlandi 1, 765 Djúpivogur ",
+    "PostCode":"765",
+    "Size":"100",
+    "Manager":"Ingibjörg Stefánsdóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Dj%C3%BApavogi/@64.655954,-14.286411,17z/data=!3m1!4b1!4m2!3m1!1s0x48cec3887e2e5067:0x1e6cd6385891367f",
+    "GPSN":"64.655954",
+    "GPSW":"-14.286463",
+    "MondayToThursday":"16-18",
+    "Friday":"13-18",
+    "Saturday":"lokað",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Djupivogur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Djupivogur_230px_2.jpg",
+    "ImageText":"Djúpivogur",
+    "Preview":"Vínbúðin Djúpivogur, sími 560-7876u003cbru003ernOpið: Mán til fim: 16 – 18 / Fös: 13 – 18 / Lau: lokað",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-222",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 18",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"223",
+    "Name":"Egilsstaðir",
+    "Email":"egilsstadir[hja]vinbudin.is",
+    "Phone":"560-7877",
+    "Address":"Miðvangi 2-4, 700 Egilsstaðir",
+    "PostCode":"700",
+    "Size":"300",
+    "Manager":"Birna Guðmundsdóttir",
+    "AssistantManager":"Erna Þórey Guttormsdóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Egilsst%C3%B6%C3%B0um/@65.261179,-14.405715,17z/data=!3m1!4b1!4m2!3m1!1s0x48cc037e116fc53d:0x4b961a1c937568b0",
+    "GPSN":"65.261192",
+    "GPSW":"-14.405790",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"12-18",
+    "WinterFriday":"11-19",
+    "WinterSaturday":"11-14",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Egilsstadir_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Egilsstadir_230px.jpg",
+    "ImageText":"Vínbúðin Egilsstöðum",
+    "Preview":"Vínbúðin Egilsstöðum, sími 560-7877u003cbru003ernOpið: Mán til fim: 11 – 18 / Fös: 11 – 19 / Lau: 11 – 16",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-223",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 16",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"206",
+    "Name":"Eiðistorg",
+    "Email":"eidistorg[hja]vinbudin.is",
+    "Phone":"560-7834",
+    "Address":"Eiðistorgi 13, 170 Seltjarnarnes",
+    "PostCode":"170",
+    "Size":"600",
+    "Manager":"Birna Borg Sigurgeirsdóttir ",
+    "AssistantManager":"Sigurborg Hreinsdóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Ei%C3%B0istorgi/@64.150161,-21.984587,17z/data=!3m1!4b1!4m2!3m1!1s0x48d60b2064a37bdb:0x2bcf2a25a18578a8",
+    "GPSN":"64.150207",
+    "GPSW":"-21.984572",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-18",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Eidistorg_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Edistorg_230px.jpg",
+    "ImageText":"Vínbúðin Eiðistorgi",
+    "Preview":"Vínbúðin Eiðistorgi, sími 560-7834u003cbru003ernOpið: mán-fim 11-18 / fös 11-19 / Lau 11-18",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-206",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"224",
+    "Name":"Fáskrúðsfjörður",
+    "Email":"faskrudsfjordur[hja]vinbudin.is",
+    "Phone":"560-7878",
+    "Address":"Skólavegi 59, 750 Fáskrúðsfjörður ",
+    "PostCode":"750",
+    "Size":"100",
+    "Manager":"Hrefna Guðný Kristmundsdóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+F%C3%A1skr%C3%BA%C3%B0sfir%C3%B0i/@64.929898,-14.011044,17z/data=!3m1!4b1!4m2!3m1!1s0x48ceb390bb33012f:0x2a5906f55fa89a97",
+    "GPSN":"64.929961",
+    "GPSW":"-14.011004",
+    "MondayToThursday":"16-18",
+    "Friday":"13-18",
+    "Saturday":"lokað",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Faskrudsfjordur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/faskrudsfjordur.jpg",
+    "ImageText":"Vínbúðin Fáskrúðsfirði",
+    "Preview":"Vínbúðin Fáskrúðsfirði, sími 560-7878u003cbru003ernOpið: mán-fim 16-18 / fös 13-18 / lau lokað",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-224",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 18",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"765",
+    "Name":"Flúðir",
+    "Email":"fludir[hja]vinbudin.is",
+    "Phone":"560-7884",
+    "Address":"Akurgerði 4, 845 Flúðum",
+    "PostCode":"845",
+    "Size":"200",
+    "Manager":"",
+    "AssistantManager":"Bára Sævaldsdóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Fl%C3%BA%C3%B0um/@64.131221,-20.319504,17z/data=!3m1!4b1!4m2!3m1!1s0x48d695ed313f8933:0xfe446d0d7c038f17",
+    "GPSN":"64.131221",
+    "GPSW":"-20.319564",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"12-18",
+    "WinterFriday":"11-19",
+    "WinterSaturday":"11-16",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Fludir_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Fludir2017_230px.jpg",
+    "ImageText":"Vínbúðin Flúðum",
+    "Preview":"Vínbúðin Flúðum, sími 560-7884u003cbru003ernOpið: Mán til fim: 11 – 18 / Fös: 11 – 19 / Lau: Lokað.",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-765",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 16",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"210",
+    "Name":"Garðabær",
+    "Email":"gardabaer@vinbudin.is",
+    "Phone":"560-7838",
+    "Address":"Kauptúni 3, 210 Garðabær",
+    "PostCode":"210",
+    "Size":"500",
+    "Manager":"Hanna Guðjónsdóttir",
+    "AssistantManager":"Anna Jónsdóttir ",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Gar%C3%B0ab%C3%A6/@64.0751956,-21.9490805,13z/data=!4m8!1m2!2m1!1zVsOtbmLDusOwaW4gZ2Fyw7BhYsOm!3m4!1s0x0:0x7e72903bb446d9b4!8m2!3d64.0724998!4d-21.9130039",
+    "GPSN":"64.073236",
+    "GPSW":"-21.912545",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-18",
+    "Sunday":"Lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources//gardabaer.png",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Gardabaer_230x230.jpg",
+    "ImageText":"Vínbúðin Garðabæ",
+    "Preview":"Vínbúðin Garðabæ, Kauptúni 3, sími 560-7838u003cbru003ernOpið: mán-fim 11-18 / fös 11-19 / Lau 11-18",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-210",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"225",
+    "Name":"Grindavík",
+    "Email":"grindavik[hja]vinbudin.is",
+    "Phone":"560-7885",
+    "Address":"Víkurbraut 62, 240 Grindavík",
+    "PostCode":"240",
+    "Size":"200",
+    "Manager":"Gunnhildur Björgvinsdóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Grindav%C3%ADk/@63.84493,-22.434661,17z/data=!3m1!4b1!4m2!3m1!1s0x48d61df6d85abe35:0x88c915b9e27b4d03",
+    "GPSN":"63.844883",
+    "GPSW":"-22.434682",
+    "MondayToThursday":"14-18",
+    "Friday":"11-19",
+    "Saturday":"11-14",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Grindavik_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Grindavik_230px.jpg",
+    "ImageText":"Vínbúðin Grindavík",
+    "Preview":"Vínbúðin Grindavík, sími 560-7885u003cbru003ernOpið: mán-fim 14-18 / fös 11-19 / lau 11-14",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-225",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 14",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"226",
+    "Name":"Grundarfjörður",
+    "Email":"grundarfjordur[hja]vinbudin.is",
+    "Phone":"560-7864",
+    "Address":"Grundargata 38, 350 Grundarfjörður",
+    "PostCode":"350",
+    "Size":"100",
+    "Manager":"Ragnheiður Kristjánsdóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/Vinbudin+Grundarfirdi/@64.925256,-23.259762,17z/data=!3m1!4b1!4m2!3m1!1s0x48d57a473b88c45d:0xf6ee909fcb49a9c8",
+    "GPSN":"64.925247",
+    "GPSW":"-23.259832",
+    "MondayToThursday":"16-18",
+    "Friday":"13-19",
+    "Saturday":"lokað",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Grundarfjordur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Grundarfjordur_230px_3.jpg",
+    "ImageText":"Vínbúðin Grundarfirði",
+    "Preview":"Vínbúðin Grundarfirði, sími 560-7864u003cbru003ernOpið: Mán til fim: 16 – 18 / Fös: 13 – 19 / Lau: lokað",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-226",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"212",
+    "Name":"Heiðrún",
+    "Email":"heidrun[hja]vinbudin.is",
+    "Phone":"560-7701",
+    "Address":"Stuðlahálsi 2, 110 Reykjavík",
+    "PostCode":"110",
+    "Size":"ALLT",
+    "Manager":"Sunneva Blöndal ",
+    "AssistantManager":"Egill Jónsson",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Hei%C3%B0r%C3%BAn/@64.119919,-21.791966,17z/data=!3m1!4b1!4m2!3m1!1s0x48d67383570405bd:0xf1eac2e838c8f7a6",
+    "GPSN":"64.119930",
+    "GPSW":"-21.791992",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-18",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Heidrun_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Heidrun_230px.jpg",
+    "ImageText":"Vínbúðin Heiðrún",
+    "Preview":"Vínbúðin Heiðrún, sími 560-7701u003cbru003ernOpið: mán-fim 11-18 / fös 11-19 / Lau 11-18",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-212",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"1304",
+    "Name":"Hella",
+    "Email":"hella[hja]vinbudin.is",
+    "Phone":"560-7886",
+    "Address":"Suðurlandsvegi 1, 850 Hella",
+    "PostCode":"850",
+    "Size":"200",
+    "Manager":"Sigríður Magnea Sigurðardóttir",
+    "AssistantManager":"G. Elín Svansdóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Hellu/@63.834594,-20.400667,17z/data=!3m1!4b1!4m2!3m1!1s0x48d6e552061aa855:0xd4e0df94669bcfdd",
+    "GPSN":"63.834581",
+    "GPSW":"-20.400783",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"12-18",
+    "WinterFriday":"11-19",
+    "WinterSaturday":"11-16",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Hella_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Hella_230px.jpg",
+    "ImageText":"Vínbúðin Hellu",
+    "Preview":"Vínbúðin Hellu, sími 560-7886u003cbru003ernOpið: Mán til fim: 11 – 18 / Fös: 11 – 19 / Lau: 11-16rn",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-1304",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 16",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"228",
+    "Name":"Hólmavík",
+    "Email":"holmavik[hja]vinbudin.is",
+    "Phone":"560-7865",
+    "Address":"Höfðatúni 4, 510 Hólmavík",
+    "PostCode":"510",
+    "Size":"100",
+    "Manager":"Ragnheiður Ingimundardóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+H%C3%B3lmav%C3%ADk/@65.701686,-21.686025,17z/data=!3m1!4b1!4m2!3m1!1s0x48d4b6d922676f19:0x23de858ce29c5c64",
+    "GPSN":"65.701627",
+    "GPSW":"-21.685987",
+    "MondayToThursday":"16-18",
+    "Friday":"13-19",
+    "Saturday":"12-14",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"16-18",
+    "WinterFriday":"13-19",
+    "WinterSaturday":"lokað",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Holmavik_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Holmavik_2015.jpg",
+    "ImageText":"Vínbúðin Hólmavík",
+    "Preview":"Vínbúðin Hólmavík, sími 560-7865u003cbru003ernOpið: Mán til fim: 16 – 18 / Fös: 13 – 19 / Lau: 12-14",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-228",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"12 - 14",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"229",
+    "Name":"Húsavík",
+    "Email":"husavik[hja]vinbudin.is",
+    "Phone":"560-7872",
+    "Address":"Garðarsbraut 21, 640 Húsavík",
+    "PostCode":"640",
+    "Size":"200",
+    "Manager":"Sigrún Óladóttir",
+    "AssistantManager":"Katrín Laufdal",
+    "GoogleMapsLink":"http://maps.google.com/maps/ms?ie=UTFu0026msa=0u0026msid=213548262731367741884.0004a7684f0ef05067f97",
+    "GPSN":"66.044652",
+    "GPSW":"-17.339165",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"12-18",
+    "WinterFriday":"11-19",
+    "WinterSaturday":"11-14",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Husavik_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Husavik_2015.jpg",
+    "ImageText":"Vínbúðin Húsavík",
+    "Preview":"Vínbúðin Húsavík, sími 560-7872u003cbru003ernOpið: Mán til fim: 11 – 18 / Fös: 11 – 19 / Lau: 11-16.",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-229",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 16",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"230",
+    "Name":"Hvammstangi",
+    "Email":"hvammstangi[hja]vinbudin.is",
+    "Phone":"560-7873",
+    "Address":"Strandgötu 1, 530 Hvammstangi ",
+    "PostCode":"530",
+    "Size":"100",
+    "Manager":"Marteinn Hólmsteinsson",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Hvammstanga/@65.395606,-20.946819,17z/data=!3m1!4b1!4m2!3m1!1s0x48d49b72671e52b3:0xeb65bd88b247faf4",
+    "GPSN":"65.395598",
+    "GPSW":"-20.946816",
+    "MondayToThursday":"16-18",
+    "Friday":"13-19",
+    "Saturday":"12-14",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Hvammstangi_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Hvammstangi.jpg",
+    "ImageText":"Vínbúðin Hvammstanga",
+    "Preview":"Vínbúðin Hvammstanga, sími 560-7873u003cbru003ernOpið Mán til fim: 16 – 18 / Fös: 13-19 / Lau: 12 – 14.",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-230",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"12 - 14",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"231",
+    "Name":"Hveragerði",
+    "Email":"hveragerdi[hja]vinbudin.is",
+    "Phone":"560-7887",
+    "Address":"Sunnumörk 2, 810 Hveragerði ",
+    "PostCode":"810",
+    "Size":"300",
+    "Manager":"Ragnheiður Guðmundsdóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Hverager%C3%B0i/@63.995412,-21.189634,17z/data=!3m1!4b1!4m2!3m1!1s0x48d666c8d015fed5:0x907d84bf4d132693",
+    "GPSN":"63.995414",
+    "GPSW":"-21.189686",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"12-18",
+    "WinterFriday":"11-19",
+    "WinterSaturday":"11-16",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Hveragerdi_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Hveragerdi_onun2.jpg",
+    "ImageText":"Vínbúðin Hveragerði",
+    "Preview":"Vínbúðin Hveragerði, sími 560-7887u003cbru003ernOpið: Mán til fim: 11 – 18 / Fös: 11 – 19 / Lau: 11-16.",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-231",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 16",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"232",
+    "Name":"Hvolsvöllur",
+    "Email":"hvolsvollur[hja]vinbudin.is",
+    "Phone":"560-7888",
+    "Address":"Austurvegi 1, 860 Hvolsvöllur ",
+    "PostCode":"860",
+    "Size":"200",
+    "Manager":"Sigríður Magnea Sigurðardóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Hvolsvelli/@63.749383,-20.233684,17z/data=!3m1!4b1!4m2!3m1!1s0x48d6e3756e7cdbbd:0xfabccb4a517eb7d0",
+    "GPSN":"63.749372",
+    "GPSW":"-20.233613",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"12-18",
+    "WinterFriday":"11-19",
+    "WinterSaturday":"11-16",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Hvolsvollur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/frettir/2010/Hvolsvollur.jpg",
+    "ImageText":"Vínbúðin Hvolsvelli",
+    "Preview":"Vínbúðin Hvolsvelli, sími 560-7888u003cbru003ernOpið: mán-fim 11-18 / fös 11-19 / Lau 11-16rnrn",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-232",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 16",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"233",
+    "Name":"Höfn",
+    "Email":"hofn[hja]vinbudin.is",
+    "Phone":"560-7889",
+    "Address":"Miðbær Litlabrú 1, 780 Höfn í Hornafirði ",
+    "PostCode":"780",
+    "Size":"200",
+    "Manager":"Anna Ólöf Ólafsdóttir (Lóa)",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in/@64.252489,-15.212079,17z/data=!3m1!4b1!4m2!3m1!1s0x48cfac574609354b:0x565cf0dd8321d1d9",
+    "GPSN":"64.252573",
+    "GPSW":"-15.212098",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"12-18",
+    "WinterFriday":"11-19",
+    "WinterSaturday":"11-14",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Hofn_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Hofn_230px.jpg",
+    "ImageText":"Vínbúðin Höfn",
+    "Preview":"Vínbúðin Höfn, sími 560-7889 u003cbru003ernOpið: Mán til fim: 11 – 18 / Fös: 11 – 19 / Lau: 11-16",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-233",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 16",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"234",
+    "Name":"Ísafjörður",
+    "Email":"isafjordur[hja]vinbudin.is",
+    "Phone":"560-7894",
+    "Address":"Suðurgötu 8, 400 Ísafjörður",
+    "PostCode":"400",
+    "Size":"300",
+    "Manager":"Snorri Grímsson",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/Vinb%C3%BA%C3%B0in+%C3%8Dsafir%C3%B0i/@66.0718274,-23.1159757,17z/data=!4m5!1m2!2m1!1zdsOtbmLDusOwaW4gw61zYWZpcsOwaQ!3m1!1s0x0:0xd806f2a4eafcc5d1",
+    "GPSN":"66.071941",
+    "GPSW":"-23.119009",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"12-18",
+    "WinterFriday":"11-19",
+    "WinterSaturday":"11-14",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Isafjordur_kort2.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/frettir/2018/Isafj_frett.jpg",
+    "ImageText":"Vínbúðin Ísafirði",
+    "Preview":"Vínbúðin Ísafirði, sími 560-7894u003cbru003ernOpið: Mán til fim: 11 – 18 / Fös: 11 – 19 / Lau: 11-16.",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-234",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 16",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"236",
+    "Name":"Kirkjubæjarklaustur",
+    "Email":"klaustur[hja]vinbudin.is",
+    "Phone":"560-7890",
+    "Address":"Klausturvegi 15, 880 Kirkjubæjarklaustri",
+    "PostCode":"880",
+    "Size":"100",
+    "Manager":"Sigurlaug Jónsdóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Kirkjub%C3%A6jarklaustri/@63.790978,-18.046718,17z/data=!3m1!4b1!4m2!3m1!1s0x48d0e54ffa096287:0x6958ee657b2d4c82",
+    "GPSN":"63.790980",
+    "GPSW":"-18.046670",
+    "MondayToThursday":"14-18",
+    "Friday":"13-19",
+    "Saturday":"12-14",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Klaustur_kort_2.JPG",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Klaustur_230px_2.jpg",
+    "ImageText":"Vínbúðin Kirkjubæjarklaustri",
+    "Preview":"Vínbúðin Kirkjubæjarklaustri, sími 560-7890u003cbru003ernOpið: Mán til fim: 14-18 / Fös: 13 – 19 / Lau: 12-14.",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-236",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"12 - 14",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"1599",
+    "Name":"Kópasker ",
+    "Email":"kopasker@vinbudin.is",
+    "Phone":"560-7895",
+    "Address":"Bakkagötu 10, 670 Kópasker",
+    "PostCode":"670",
+    "Size":"100",
+    "Manager":"Sigrún Óladóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+K%C3%B3paskeri,+Bakkag%C3%B6tu+10/@66.300485,-16.447703,17z/data=!3m1!4b1!4m2!3m1!1s0x48ccd80c53096811:0x49b738b8e7e72f91",
+    "GPSN":"66.300483",
+    "GPSW":"-16.447746",
+    "MondayToThursday":"16-18",
+    "Friday":"13-18",
+    "Saturday":"lokað",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Kopasker_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Kopasker_230px.jpg",
+    "ImageText":"Vínbúðin Kópaskeri",
+    "Preview":"Vínbúðin Kópaskeri, sími 560-7895u003cbru003ernOpið: Mán til fim: 16 -18 / Fös: 13 – 18 / Lau: Lokað",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-1599",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 18",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"213",
+    "Name":"Kringlan",
+    "Email":"kringlan[hja]vinbudin.is",
+    "Phone":"560-7810",
+    "Address":"Kringlunni 4-12, 103 Reykjavík",
+    "PostCode":"103",
+    "Size":"ALLT",
+    "Manager":"Ragnar B. Ragnarsson",
+    "AssistantManager":"Heiðrún Þóra Gunnarsdóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Kringlunni/@64.130645,-21.894035,17z/data=!3m1!4b1!4m2!3m1!1s0x48d674b07ac9abc7:0x6af697ca41b5620c",
+    "GPSN":"64.130891",
+    "GPSW":"-21.894346",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-18",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Kringlan_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Kringla_230px.jpg",
+    "ImageText":"Vínbúðin Kringlunni",
+    "Preview":"Vínbúðin Kringlunni, sími 560-7810u003cbru003ernOpið: mán-fim 11-18 / fös 11-19 / Lau 11-18",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-213",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"214",
+    "Name":"Mosfellsbær",
+    "Email":"mosfellsbaer[hja]vinbudin.is",
+    "Phone":"560-7816",
+    "Address":"Þverholti 2, 270 Mosfellsbæ",
+    "PostCode":"270",
+    "Size":"600",
+    "Manager":"Hanna Guðjónsdóttir",
+    "AssistantManager":"Svanborg Björnsdóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Mosfellsb%C3%A6/@64.167639,-21.697397,17z/data=!3m1!4b1!4m2!3m1!1s0x48d676c08fe77b77:0x210600f15645830",
+    "GPSN":"64.167669",
+    "GPSW":"-21.696603",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-18",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Mosfellsbaer_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Moso2_jul2020.jpg",
+    "ImageText":"Vínbúðin Mosfellsbæ",
+    "Preview":"Vínbúðin Mosfellsbæ, sími 560-7816u003cbru003ernOpið: mán-fim 11-18 / fös 11-19 / Lau 11-18",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-214",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"237",
+    "Name":"Neskaupstaður",
+    "Email":"neskaupstadur[hja]vinbudin.is",
+    "Phone":"560-7879",
+    "Address":"Hafnarbraut 15, 740 Neskaupstaður ",
+    "PostCode":"740",
+    "Size":"200",
+    "Manager":"",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Neskaupssta%C3%B0/@65.147495,-13.691948,17z/data=!3m1!4b1!4m2!3m1!1s0x48c9574866e27a8b:0x93f94cdd4f4dc204",
+    "GPSN":"65.147493",
+    "GPSW":"-13.691969",
+    "MondayToThursday":"14-18",
+    "Friday":"11-19",
+    "Saturday":"11-14",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Neskaupstadur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Neskaupstadur_230.jpg",
+    "ImageText":"Vínbúðin Neskaupstað",
+    "Preview":"Vínbúðin Neskaupstað, sími 560-7879u003cbru003ernOpið: mán-fim 14-18 / fös 11-19 / lau 11-14",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-237",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 14",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"238",
+    "Name":"Ólafsvík",
+    "Email":"olafsvik[hja]vinbudin.is",
+    "Phone":"560-7866",
+    "Address":"Ólafsbraut 55, 355 Ólafsvík",
+    "PostCode":"355",
+    "Size":"200",
+    "Manager":"Elsa Bergmundsdóttir",
+    "AssistantManager":"Unnur Emanúelsdóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+%C3%93lafsv%C3%ADk/@64.893787,-23.70399,17z/data=!3m1!4b1!4m2!3m1!1s0x492a831e86f05b41:0x34e87a33b343b5d6",
+    "GPSN":"64.893783",
+    "GPSW":"-23.703978",
+    "MondayToThursday":"14-18",
+    "Friday":"13-19",
+    "Saturday":"11-14",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Olafsvik_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Olafsvik2_230px.jpg",
+    "ImageText":"Vínbúðin Ólafsvík",
+    "Preview":"Vínbúðin Ólafsvík, sími 560-7866u003cbru003ernOpið: mán-fim 14-18 / fös 13-19 / lau 11-14",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-238",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 14",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"239",
+    "Name":"Patreksfjörður",
+    "Email":"patreksfjordur[hja]vinbudin.is",
+    "Phone":"560-7869",
+    "Address":"Þórsgötu 8, 450 Patreksfjörður",
+    "PostCode":"450",
+    "Size":"200",
+    "Manager":"Gunnhildur Þórisdóttir ",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Patreksfir%C3%B0i/@65.598418,-24.001479,17z/data=!3m1!4b1!4m2!3m1!1s0x4f2aae11bd7ade85:0x752d701fc8e43705",
+    "GPSN":"65.598489",
+    "GPSW":"-24.001538",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-14",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Patreksfjordur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/patr_.jpg",
+    "ImageText":"Vínbúðin Patreksfirði",
+    "Preview":"Vínbúðin Patreksfirði, sími 560-7869u003cbru003ernOpið: Mán til fim: 11 – 18 / Fös: 11 – 19 / Lau: 11 – 14",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-239",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 14",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"240",
+    "Name":"Reyðarfjörður",
+    "Email":"reydarfjordur[hja]vinbudin.is",
+    "Phone":"560-7880",
+    "Address":"Hafnargötu 2, 730 Reyðarfjörður",
+    "PostCode":"730",
+    "Size":"200",
+    "Manager":"Ásdís Bóasdóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"http://maps.google.com/maps/ms?ie=UTFu0026msa=0u0026msid=213548262731367741884.0004a76908f4d10c62661",
+    "GPSN":"65.032814",
+    "GPSW":"-14.220557",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"12-18",
+    "WinterFriday":"11-19",
+    "WinterSaturday":"11-14",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Reydarfjordur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Reydarfjordur_230px.jpg",
+    "ImageText":"Vínbúðin Reyðarfirði",
+    "Preview":"Vínbúðin Reyðarfirði, sími 560-7880u003cbru003ernOpið: Mán til fim: 11 -18 / Fös: 11 – 19 / Lau: 11-16",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-240",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 16",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"235",
+    "Name":"Reykjanesbær",
+    "Email":"reykjanesbaer[hja]vinbudin.is",
+    "Phone":"560-7843",
+    "Address":"Krossmóum 4, 260 Reykjanesbær ",
+    "PostCode":"230",
+    "Size":"600",
+    "Manager":"Rannveig Ævarsdóttir",
+    "AssistantManager":"Guðveig Sigurðardóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Reykjanesb%C3%A6/@63.993673,-22.549417,17z/data=!3m1!4b1!4m2!3m1!1s0x48d6023d8b80998f:0x9fe90d975415ee23",
+    "GPSN":"63.993473",
+    "GPSW":"-22.549419",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Reykjanesbaer_kort.JPG",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Reykjanesb_r_230px.jpg",
+    "ImageText":"Vínbúðin Reykjanesbæ",
+    "Preview":"Vínbúðin Reykjanesbæ, sími 560-7843u003cbru003ernOpið: mán-fim 11-18 / fös 11-19 / lau 11-16.. sjá nánar...",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-235",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"241",
+    "Name":"Sauðárkrókur",
+    "Email":"saudarkrokur[hja]vinbudin.is",
+    "Phone":"560-7874",
+    "Address":"Smáragrund 2, 550 Sauðárkrókur",
+    "PostCode":"550",
+    "Size":"300",
+    "Manager":"Jón Sveinsson",
+    "AssistantManager":"Vilborg Þórunn Jóhannsdóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Sau%C3%B0%C3%A1rkr%C3%B3ki/@65.745305,-19.641366,17z/data=!4m2!3m1!1s0x48d3227c15872f03:0xc57ecb273010ff80",
+    "GPSN":"65.745237",
+    "GPSW":"-19.641322",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"12-18",
+    "WinterFriday":"11-19",
+    "WinterSaturday":"11-14",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Saudarkrokur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Saudarkrokur_230px.jpg",
+    "ImageText":"Vínbúðin Sauðárkróki",
+    "Preview":"Vínbúðin Sauðárkróki, sími 560-7874u003cbru003ernOpið: Mán til fim: 11 -18 / Fös: 11 – 19 / Lau: 11-16.",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-241",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 16",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"242",
+    "Name":"Selfoss",
+    "Email":"selfoss[hja]vinbudin.is",
+    "Phone":"560-7846",
+    "Address":"Larsenstræti 3, 800 Selfossi",
+    "PostCode":"800",
+    "Size":"600",
+    "Manager":"Árni Guðmundsson",
+    "AssistantManager":"Ólafía Halldórsdóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/Larsenstr%C3%A6ti+3,+Selfoss/@63.9377768,-20.9753684,17z/data=!3m1!4b1!4m5!3m4!1s0x48d65fc6d736934f:0x16e89b701ccab466!8m2!3d63.9377745!4d-20.9731797",
+    "GPSN":"63.9377745",
+    "GPSW":"-20.9731797",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/larsenstraeti3.png",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/selfoss-mynd.png",
+    "ImageText":"Vínbúðin á Selfossi",
+    "Preview":"Vínbúðin Selfossi, sími 560-7846u003cbru003ernOpið: Mán til fim: 11 -18 / Fös: 11 – 19 / Lau: 11-16.",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-242",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"243",
+    "Name":"Seyðisfjörður",
+    "Email":"seydisfjordur[hja]vinbudin.is",
+    "Phone":"560-7881",
+    "Address":"Hafnargötu 4a, 710 Seyðisfjörður",
+    "PostCode":"710",
+    "Size":"100",
+    "Manager":"J. Brynjar Júlíusson",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Sey%C3%B0isfir%C3%B0i/@65.262351,-13.998846,17z/data=!3m1!4b1!4m2!3m1!1s0x48cbfefb804b4aad:0xee0cd9510ff39aea",
+    "GPSN":"65.262326",
+    "GPSW":"-13.998848",
+    "MondayToThursday":"16-18",
+    "Friday":"13-18",
+    "Saturday":"lokað",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Seydisfjordur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Sey_isfjoerdur_230px.jpg",
+    "ImageText":"Vínbúðin Seyðisfirði",
+    "Preview":"Vínbúðin Sauðárkróki, sími 560-7881bru003ernOpið: Mán til fim: 16 -18 / Fös: 13 – 18 / Lau: Lokað.",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-243",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 18",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"244",
+    "Name":"Siglufjörður",
+    "Email":"siglufjordur[hja]vinbudin.is",
+    "Phone":"560-7875",
+    "Address":"Eyrargötu 25, 580 Siglufjörður",
+    "PostCode":"580",
+    "Size":"200",
+    "Manager":"Eygló Möller ",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Siglufir%C3%B0i/@66.15187,-18.909549,17z/data=!3m1!4b1!4m2!3m1!1s0x48d2ca14569b05f5:0xec23b9d5075e447",
+    "GPSN":"66.151884",
+    "GPSW":"-18.909557",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-14",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"12-18",
+    "WinterFriday":"11-19",
+    "WinterSaturday":"11-14",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Siglufjordur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Siglufjordur2_230px.jpg",
+    "ImageText":"Vínbúðin Siglufirði",
+    "Preview":"Vínbúðin Siglufirði, sími 560-7875u003cbru003ernOpið: Mán til fim: 11 -18 / Fös: 11 – 19 / Lau: 11-14..",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-244",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 14",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"215",
+    "Name":"Skeifan",
+    "Email":"skeifan[hja]vinbudin.is",
+    "Phone":"560-7819",
+    "Address":"Skeifunni 5, 108 Reykjavík",
+    "PostCode":"108",
+    "Size":"800",
+    "Manager":"Anna Jónsdóttir",
+    "AssistantManager":"Sigurður Sigurðsson",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Skeifunni/@64.132302,-21.870167,17z/data=!3m1!4b1!4m2!3m1!1s0x48d674bd4df6d547:0xeb618d3cf651b55e",
+    "GPSN":"64.132150",
+    "GPSW":"-21.870071",
+    "MondayToThursday":"u003cbu003e10u003c/bu003e-20",
+    "Friday":"u003cbu003e10u003c/bu003e-20",
+    "Saturday":"11-18",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Skeifan_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Skeifan_230px.jpg",
+    "ImageText":"Vínbúðin Skeifunni",
+    "Preview":"Vínbúðin Skeifunni, sími 560-7819u003cbru003ernOpið: mán-fös 10-20 /  Lau 11-18",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-215",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"10 - 20",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"10 - 20",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"10 - 20",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"10 - 20",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"635",
+    "Name":"Skútuvogur",
+    "Email":"skutuvogur[hja]vinbudin.is",
+    "Phone":"560-7825",
+    "Address":"Skútuvogi 2, 104 Reykjavík",
+    "PostCode":"104",
+    "Size":"ALLT",
+    "Manager":"Anna María Gylfadóttir",
+    "AssistantManager":"Sædís Gísladóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Sk%C3%BAtuvogi/@64.140339,-21.847844,17z/data=!3m1!4b1!4m2!3m1!1s0x48d6748e14e3b321:0x8e6fe78ed58e8fcb",
+    "GPSN":"64.140399",
+    "GPSW":"-21.847830",
+    "MondayToThursday":"u003cbu003e10u003c/bu003e-20",
+    "Friday":"u003cbu003e10u003c/bu003e-20",
+    "Saturday":"11-18",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Skutuvogur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/um_atvr/fyrir_fjolmidla/Skutuvogur_prew.jpg",
+    "ImageText":"Skútuvogur",
+    "Preview":"Vínbúðin Skútuvogi, sími 560-7825u003cbru003ernOpið: mán-fös 10-20 / Lau 11-18",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-635",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"10 - 20",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"10 - 20",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"10 - 20",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"10 - 20",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"216",
+    "Name":"Smáralind",
+    "Email":"smaralind[hja]vinbudin.is",
+    "Phone":"560-7822",
+    "Address":"Hagasmára 1, 201 Kópavogur",
+    "PostCode":"201",
+    "Size":"600",
+    "Manager":"Rafn Sigurðsson",
+    "AssistantManager":"Helga Unnur Jóhannsdóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Sm%C3%A1ralind/@64.1014,-21.882555,17z/data=!3m1!4b1!4m2!3m1!1s0x48d6734cf83dad53:0x57b9388024ac19a2",
+    "GPSN":"64.101552",
+    "GPSW":"-21.881602",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-18",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Smaralind_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/Smaralind.jpg",
+    "ImageText":"",
+    "Preview":"Vínbúðin Smáralind, sími 560-7822u003cbru003ernOpið: mán-fim 11-18 / fös 11-19 / Lau 11-18",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-216",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"4907",
+    "Name":"Spöngin",
+    "Email":"spongin@vinbudin.is",
+    "Phone":"560-7898",
+    "Address":"Spönginni 25, 112 Reykjavík",
+    "PostCode":"112",
+    "Size":"600",
+    "Manager":"",
+    "AssistantManager":"",
+    "GoogleMapsLink":"",
+    "GPSN":"64.150745",
+    "GPSW":"-21.787282",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-18",
+    "Sunday":"Lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"",
+    "ImageUrl":"/Portaldata/1/Resources/frettir/2015/Spong_230.jpg",
+    "ImageText":"Vínbúðin Spöng",
+    "Preview":"Vínbúðin Spönginni sími 560-7898rnOpið: mán-fim 11-18 / fös 11-19 / Lau 11-18",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-4907",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"218",
+    "Name":"Stekkjarbakki",
+    "Email":"stekkjarbakki[hja]vinbudin.is",
+    "Phone":"560-7813",
+    "Address":"Stekkjarbakka 6, 109 Reykjavík",
+    "PostCode":"109",
+    "Size":"600",
+    "Manager":"Ingibjörg E. Sigurðardóttir",
+    "AssistantManager":"Jóna Soffía Þorbjarnardóttir",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Stekkjarbakka/@64.111633,-21.842472,17z/data=!3m1!4b1!4m2!3m1!1s0x48d67367d7649f07:0x3a93882462004210",
+    "GPSN":"64.111626",
+    "GPSW":"-21.841996",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-18",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Stekkjarbakki_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Stekkjarbakki_230.jpg",
+    "ImageText":"Vínbúðin Stekkjarbakka",
+    "Preview":"Vínbúðin Stekkjarbakka, sími 560-7813u003cbru003ernOpið: mán-fim 11-18 / fös 11-19 / Lau 11-18",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-218",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"245",
+    "Name":"Stykkishólmur",
+    "Email":"stykkisholmur[hja]vinbudin.is",
+    "Phone":"560-7867",
+    "Address":"Aðalgötu 24, 340 Stykkishólmur",
+    "PostCode":"340",
+    "Size":"200",
+    "Manager":"Erla D. Lárusdóttir",
+    "AssistantManager":"Björgvin Þorvarðarson",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Stykkish%C3%B3lmi/@65.074074,-22.72994,17z/data=!3m1!4b1!4m2!3m1!1s0x48d50dfaeb0f91ff:0xd4ee70b82e166e5f",
+    "GPSN":"65.074047",
+    "GPSW":"-22.729779",
+    "MondayToThursday":"14-18",
+    "Friday":"13-19",
+    "Saturday":"11-14",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"14-18",
+    "WinterFriday":"14-18",
+    "WinterSaturday":"lokað",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Stykkisholmur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Stykkish_lmur_230px.JPG",
+    "ImageText":"Vínbúðin Stykkishólmi",
+    "Preview":"Vínbúðin Stykkishólmi, sími 560-7867u003cbru003ernOpið: Mán til fim: 14 -18 / Fös: 13 – 19 / Lau: 11-14.",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-245",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 14",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"246",
+    "Name":"Vestmannaeyjar",
+    "Email":"vestmannaeyjar[hja]vinbudin.is",
+    "Phone":"560-7891",
+    "Address":"Vesturvegi 10, 900 Vestmannaeyjar",
+    "PostCode":"900",
+    "Size":"300",
+    "Manager":"Sigríður Garðarsdóttir",
+    "AssistantManager":"Ásta Kristín Reynisdóttir ",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in/@63.442409,-20.271803,17z/data=!3m1!4b1!4m2!3m1!1s0x48d708c64aa3df87:0x81210335767feeeb",
+    "GPSN":"63.441292",
+    "GPSW":"-20.270879",
+    "MondayToThursday":"11-18",
+    "Friday":"11-19",
+    "Saturday":"11-16",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"12-18",
+    "WinterFriday":"11-19",
+    "WinterSaturday":"11-14",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Vestmannaeyjar_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Vestmannaeyjar3_2015.jpg",
+    "ImageText":"Vínbúðin Vestmannaeyjum",
+    "Preview":"Vínbúðin Vestmannaeyjum, sími 560-7891u003cbru003ernOpið: Mán til fim: 11 -18 / Fös: 11 – 19 / Lau: 11-16.rn",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-246",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"11 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"11 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"11 - 16",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"247",
+    "Name":"Vík í Mýrdal",
+    "Email":"vik[hja]vinbudin.is",
+    "Phone":"560-7892",
+    "Address":"Ránarbraut 1, 870 Vík",
+    "PostCode":"870",
+    "Size":"100",
+    "Manager":"Kolbrún Magga Matthíasdóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+V%C3%ADk+%C3%AD+M%C3%BDrdal/@63.419139,-19.008472,17z/data=!3m1!4b1!4m2!3m1!1s0x48d74a47859739dd:0x917698a8b12fbeba",
+    "GPSN":"63.419150",
+    "GPSW":"-19.008455",
+    "MondayToThursday":"14-18",
+    "Friday":"13-19",
+    "Saturday":"12-14",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Vik_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Vik_230px.jpg",
+    "ImageText":"Vínbúðin Vík",
+    "Preview":"Vínbúðin Vík, sími 560-7892u003cbru003ernOpið: Mán til fim: 14 -18 / Fös: 13 – 19 / Lau: 12-14.rn",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-247",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"14 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 19",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"12 - 14",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"248",
+    "Name":"Vopnafjörður",
+    "Email":"vopnafjordur[hja]vinbudin.is",
+    "Phone":"560-7882",
+    "Address":"Hafnarbyggð 4, 690 Vopnafjörður",
+    "PostCode":"690",
+    "Size":"100",
+    "Manager":"Árni S. Róbertsson",
+    "AssistantManager":"Árný Vatnsdal",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+Vopnafir%C3%B0i/@65.753631,-14.826275,17z/data=!3m1!4b1!4m2!3m1!1s0x48cc7ad44ad96133:0xebf053ae31686283",
+    "GPSN":"65.753642",
+    "GPSW":"-14.826396",
+    "MondayToThursday":"16-18",
+    "Friday":"13-18",
+    "Saturday":"lokað",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Vopnafjordur_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Vopnafjordur_230px.jpg",
+    "ImageText":"Vínbúðin Vopnafirði",
+    "Preview":"Vínbúðin Vopnafirði, sími 560-7882u003cbru003ernOpið: Mán til fim: 16 – 18 / Fös: 13 – 18 / Lau: lokað",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-248",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 18",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"249",
+    "Name":"Þorlákshöfn",
+    "Email":"thorlakshofn[hja]vinbudin.is",
+    "Phone":"560-7893",
+    "Address":"Selvogsbraut 41, 815 Þorlákshöfn",
+    "PostCode":"815",
+    "Size":"100",
+    "Manager":"Sigrún Rúnarsdóttir",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+%C3%9Eorl%C3%A1ksh%C3%B6fn/@63.856595,-21.38463,17z/data=!3m1!4b1!4m2!3m1!1s0x48d64248314a2671:0xdf90e229d96f7068",
+    "GPSN":"63.856599",
+    "GPSW":"-21.384634",
+    "MondayToThursday":"16-18",
+    "Friday":"13-18",
+    "Saturday":"lokað",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Thorlakshofn_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/_orklakshofn_230px.jpg",
+    "ImageText":"Vínbúðin Þorlákshöfn",
+    "Preview":"Vínbúðin Þorlákshöfn, sími 560-7893u003cbru003ernOpið: Mán til fim: 16 – 18 / Fös: 13 – 18 / Lau: lokað.",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-249",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 18",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  },
+  {
+    "NewsID":"250",
+    "Name":"Þórshöfn",
+    "Email":"thorshofn[hja]vinbudin.is",
+    "Phone":"560-7883",
+    "Address":"Langanesvegi 2, 680 Þórshöfn",
+    "PostCode":"680",
+    "Size":"100",
+    "Manager":"Alina Beata Burba Tarasiewicz",
+    "AssistantManager":"",
+    "GoogleMapsLink":"https://www.google.com/maps/place/V%C3%ADnb%C3%BA%C3%B0in+%C3%9E%C3%B3rsh%C3%B6fn/@66.198598,-15.337751,17z/data=!3m1!4b1!4m2!3m1!1s0x48cc967c977d6673:0xdc8934df7e19e268",
+    "GPSN":"66.198608",
+    "GPSW":"-15.337717",
+    "MondayToThursday":"16-18",
+    "Friday":"13-18",
+    "Saturday":"lokað",
+    "Sunday":"lokað",
+    "WinterMondayToThursday":"",
+    "WinterFriday":"",
+    "WinterSaturday":"",
+    "WinterSunday":"",
+    "MapsImageUrl":"/Portaldata/1/Resources/vinbudir/kort-vinbudir/Thorshofn_kort.jpg",
+    "ImageUrl":"/Portaldata/1/Resources/vinbudir/myndir-vinbudir/Thorshofn_mynd2020_230px.jpg",
+    "ImageText":"Vínbúðin Þórshöfn",
+    "Preview":"Vínbúðin Þórshöfn, sími 560-7883u003cbru003ernOpið: mán-fim 16-18 / fös 13-18 / lau lokað.",
+    "newsUrl":"/desktopdefault.aspx/tabid-137/94_read-250",
+    "today":{
+      "date":"2. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day1":{
+      "date":"3. ágú.",
+      "weekday":"Mánudagur",
+      "open":"Lokað",
+      "isDefault":false
+    },
+    "day2":{
+      "date":"4. ágú.",
+      "weekday":"Þriðjudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day3":{
+      "date":"5. ágú.",
+      "weekday":"Miðvikudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day4":{
+      "date":"6. ágú.",
+      "weekday":"Fimmtudagur",
+      "open":"16 - 18",
+      "isDefault":true
+    },
+    "day5":{
+      "date":"7. ágú.",
+      "weekday":"Föstudagur",
+      "open":"13 - 18",
+      "isDefault":true
+    },
+    "day6":{
+      "date":"8. ágú.",
+      "weekday":"Laugardagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "day7":{
+      "date":"9. ágú.",
+      "weekday":"Sunnudagur",
+      "open":"Lokað",
+      "isDefault":true
+    },
+    "isOpenNow":false,
+    "description":"",
+    "Distance":0.0
+  }
+]
