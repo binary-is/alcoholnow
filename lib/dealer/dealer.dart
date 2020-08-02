@@ -22,7 +22,7 @@ class Dealer {
 
   bool isOpen() {
     final now = getNow();
-    return now.isAfter(today.opens) && now.isBefore(today.closes);
+    return today != null && now.isAfter(today.opens) && now.isBefore(today.closes);
   }
 
   @override
