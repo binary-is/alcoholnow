@@ -30,6 +30,9 @@ extension Localization on String {
     'en_us': 'Closed at ',
     'is_is': 'Lokaði kl. ',
   } + {
+    'en_us': 'Closed all day.',
+    'is_is': 'Lokað í allan dag.',
+  } + {
     'en_us': 'Error:',
     'is_is': 'Villa:',
   } + {
