@@ -16,7 +16,7 @@ class Dealer {
     return Dealer(
       name: json['Name'],
       image_url: Constants.STORE_WEBSITE_URL + json['ImageUrl'],
-      today: OpeningHours.fromPrimitive(json['today']['open']),
+      today: OpeningHours.fromPrimitive(json['today']),
     );
   }
 

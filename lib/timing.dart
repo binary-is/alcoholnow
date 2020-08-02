@@ -5,27 +5,47 @@ import 'package:intl/intl.dart';
 // purposes.
 
 class OpeningHours {
+
+  // We won't rely on conventions, but rather the actual known data. This is
+  // simpler, more readable and possibly even more reliable than trying to
+  // parse the input strings as Icelandic short-months with some library.
+  static const IcelandicMonthMap = {
+    'jan.': 1,
+    'feb.': 2,
+    'mar.': 3,
+    'apr.': 4,
+    'maí.': 5,
+    'jún.': 6,
+    'júl.': 7,
+    'ágú.': 8,
+    'sep.': 9,
+    'okt.': 10,
+    'nóv.': 11,
+    'des.': 12,
+  };
+
   final DateTime opens;
   final DateTime closes;
 
   OpeningHours({this.opens, this.closes});
 
-  // Note: This function assumes that the primitive string (f.e. "11 - 18")
-  // refers to today. If another date is needed, the returned value must be
-  // manipulated afterwards. Note the "dayAfter" function in this file.
-  factory OpeningHours.fromPrimitive(primitive_string) {
+  factory OpeningHours.fromPrimitive(json) {
+
+    // Current year assumed. Calling function must remedy if this is wrong.
+    final int year = getNow().year;
+    final int month = IcelandicMonthMap[json['date'].substring(json['date'].indexOf('.') + 2)];
+    final int day = int.parse(json['date'].substring(0, json['date'].indexOf('.')));
 
     // For example, the string "11 - 18" means that a dealer opens at 11:00 AM
     // and closes at 6:00 PM.
-    final primitive_hours = primitive_string.split(' - ');
+    final primitive_hours = json['open'].split(' - ');
 
-    // If the above-mentioned format results in exactly two values, we know
-    // that opening hours apply (i.e. the store is open at some point today).
+    // If primitive_hours has exactly two values, we know that the store is
+    // open at some point during the day.
     if (primitive_hours.length == 2) {
-      final now = getNow();
       return OpeningHours(
-        opens: DateTime(now.year, now.month, now.day, int.parse(primitive_hours[0])),
-        closes: DateTime(now.year, now.month, now.day, int.parse(primitive_hours[1])),
+        opens: DateTime(year, month, day, int.parse(primitive_hours[0])),
+        closes: DateTime(year, month, day, int.parse(primitive_hours[1])),
       );
     }
     else {
