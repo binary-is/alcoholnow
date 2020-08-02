@@ -31,6 +31,11 @@ class OpeningHours {
 
   factory OpeningHours.fromPrimitive(json) {
 
+    // Stop wasting time if we know it's closed.
+    if (json['open'] == 'Lokað') {
+      return null;
+    }
+
     // Current year assumed. Calling function must remedy if this is wrong.
     final int year = getNow().year;
     final int month = IcelandicMonthMap[json['date'].substring(json['date'].indexOf('.') + 2)];
@@ -59,15 +64,27 @@ class Dealer {
   final String name;
   final String image_url;
   final OpeningHours today;
+  final OpeningHours next_opening;
 
-  Dealer({this.name, this.image_url, this.today});
+  Dealer({this.name, this.image_url, this.today, this.next_opening});
 
   factory Dealer.fromJson(Map<String, dynamic> json) {
+
+    // Find the next day (after today) when it's open.
+    OpeningHours next_opening;
+    for (var future_day = 1; future_day <= 7; future_day++) {
+      next_opening = OpeningHours.fromPrimitive(json['day${future_day}']);
+      if (next_opening != null) {
+        // This means we've found a day on which it's open.
+        break;
+      }
+    }
 
     return Dealer(
       name: json['Name'],
       image_url: Constants.STORE_WEBSITE_URL + json['ImageUrl'],
       today: OpeningHours.fromPrimitive(json['today']),
+      next_opening: next_opening,
     );
   }
 

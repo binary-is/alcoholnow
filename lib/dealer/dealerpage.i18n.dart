@@ -15,6 +15,9 @@ extension Localization on String {
     'en_us': 'Opens later today!',
     'is_is': 'Opnar seinna í dag!',
   } + {
+    'en_us': 'Opens on %s at %s.',
+    'is_is': 'Opnar %s kl. %s.',
+  } + {
     'en_us': 'Closed!',
     'is_is': 'Lokað!',
   } + {
