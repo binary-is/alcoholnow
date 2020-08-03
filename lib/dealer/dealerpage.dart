@@ -35,6 +35,13 @@ class _DealerPageState extends State<DealerPage> {
     });
   }
 
+  List<Dealer> orderProperly(dealers) {
+    dealers.sort((Dealer a, Dealer b) {
+      return a.next_opening.opens.compareTo(b.next_opening.opens);
+    });
+    return dealers;
+  }
+
   ListTile buildDealer(dealer) {
 
     /// We'll be using this again and again.
@@ -117,7 +124,7 @@ class _DealerPageState extends State<DealerPage> {
         if (snapshot.hasData) {
 
           final List<ListTile> tiles = [];
-          for (var dealer in snapshot.data) {
+          for (var dealer in orderProperly(snapshot.data)) {
             if (dealer.isOpen() || !Constants.HIDE_CLOSED) {
               tiles.add(buildDealer(dealer));
             }
