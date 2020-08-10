@@ -24,8 +24,8 @@ extension Localization on String {
     'en_us': 'Opens at %s and closes at %s.',
     'is_is': 'Opnar kl. %s og lokar kl. %s.',
   } + {
-    'en_us': 'Closes at ',
-    'is_is': 'Lokar kl. ',
+    'en_us': 'Closes at %s.',
+    'is_is': 'Lokar kl. %s.',
   } + {
     'en_us': 'Closed at %s.',
     'is_is': 'Lokaði kl. %s.',
