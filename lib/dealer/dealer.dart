@@ -105,9 +105,7 @@ Future<List<Dealer>> fetchDealers() async {
   List list;
 
   if (Constants.DEV_USE_LOCAL_JSON) {
-    debugPrint(Directory.current.toString());
     String json_string = await rootBundle.loadString('example-data/2020-08-02.json');
-
     list = json.decode(json_string) as List;
   }
   else {
