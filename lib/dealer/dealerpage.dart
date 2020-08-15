@@ -20,6 +20,7 @@ class _DealerPageState extends State<DealerPage> {
 
     fetchDealers().then((dealers) {
       _dealers = dealers;
+      orderProperly(_dealers);
       controller.add(_dealers);
     }).catchError((e) {
       final String errorClass = e.runtimeType.toString();
@@ -35,11 +36,10 @@ class _DealerPageState extends State<DealerPage> {
     });
   }
 
-  List<Dealer> orderProperly(dealers) {
+  void orderProperly(dealers) {
     dealers.sort((Dealer a, Dealer b) {
       return a.next_opening.opens.compareTo(b.next_opening.opens);
     });
-    return dealers;
   }
 
   ListTile buildDealer(dealer) {
@@ -124,7 +124,7 @@ class _DealerPageState extends State<DealerPage> {
         if (snapshot.hasData) {
 
           final List<ListTile> tiles = [];
-          for (var dealer in orderProperly(snapshot.data)) {
+          for (var dealer in snapshot.data) {
             if (dealer.isOpen() || !Constants.HIDE_CLOSED) {
               tiles.add(buildDealer(dealer));
             }
