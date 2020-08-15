@@ -9,3 +9,6 @@ const String MAIN_LOCALE = 'is_is';
 
 // TODO: Turn this into a user-configurable option.
 const bool HIDE_CLOSED = false;
+
+// Constants for development purposes.
+const bool DEV_USE_LOCAL_JSON = false;
