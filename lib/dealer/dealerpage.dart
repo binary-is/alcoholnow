@@ -38,10 +38,40 @@ class _DealerPageState extends State<DealerPage> {
   void initState() {
     super.initState();
 
-    fetchDealers().then((dealers) {
+    // Initialize geolocation stuff.
+    var geolocator = Geolocator();
+    var locationOptions = LocationOptions(
+      accuracy: LocationAccuracy.high,
+      distanceFilter: 20,
+    );
+
+    // Fetch dealers from remote source.
+    fetchDealers().then((dealers) async {
+      // We'll need to access dealers again later.
       _dealers = dealers;
+
+      // Check if we already have location data to order by.
+      if (
+        await geolocator.isLocationServiceEnabled()
+        && await geolocator.checkGeolocationPermissionStatus() == GeolocationStatus.granted
+      ) {
+        Position position = await geolocator.getCurrentPosition(
+          desiredAccuracy: LocationAccuracy.high,
+        );
+        if (position != null) {
+          await updateDealerPositions(position);
+        }
+      }
+
+      // Order dealers according to available parameters.
       orderProperly(_dealers);
+
+      // Notify the UI about new dealer data.
       controller.add(_dealers);
+
+      // Start listening for new location updates.
+      positionStream = geolocator.getPositionStream(locationOptions).listen(updateDealerPositions);
+
     }).catchError((e) {
       final String errorClass = e.runtimeType.toString();
       if (errorClass == 'SocketException') {
@@ -54,8 +84,6 @@ class _DealerPageState extends State<DealerPage> {
         controller.addError(e.toString());
       }
     });
-
-    startGeolocator();
   }
 
   void updateDealerPositions(Position position) async {
@@ -83,16 +111,6 @@ class _DealerPageState extends State<DealerPage> {
       // Notify the UI.
       controller.add(_dealers);
     }
-  }
-
-  void startGeolocator() {
-
-    var geolocator = Geolocator();
-    var locationOptions = LocationOptions(
-      accuracy: LocationAccuracy.high,
-      distanceFilter: 20,
-    );
-    positionStream = geolocator.getPositionStream(locationOptions).listen(updateDealerPositions);
   }
 
   void orderProperly(dealers) {
