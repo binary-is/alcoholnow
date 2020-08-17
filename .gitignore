@@ -33,6 +33,7 @@ pubspec.lock
 
 # iOS related
 /ios/build/
+/ios/Flutter/.last_build_id
 
 # Web related
 lib/generated_plugin_registrant.dart
