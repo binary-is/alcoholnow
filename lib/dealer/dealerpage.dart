@@ -1,26 +1,11 @@
 import 'dart:async';
-import 'package:intl/intl.dart';
 import 'dealerpage.i18n.dart';
 import 'dealer.dart';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import '../constants.dart' as Constants;
-import '../timing.dart';
-
-// Returns a friendly human-readable representation of a number as a distance.
-// TODO: Move to a utilities package.
-String distanceDisplay(distance) {
-  String result;
-
-  if (distance > 999) {
-    double reducedDistance = (distance / 10).round() / 100;
-    result = NumberFormat.compact(locale: Constants.MAIN_LOCALE).format(reducedDistance);
-    return '%s kilometers'.i18n.fill([result]);
-  }
-  else {
-    return '%s meters'.i18n.fill([distance]);
-  }
-}
+import '../display_utils.dart';
+import '../timing_utils.dart';
 
 class DealerPage extends StatefulWidget {
   @override
