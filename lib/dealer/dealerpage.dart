@@ -1,9 +1,26 @@
 import 'dart:async';
+import 'package:intl/intl.dart';
 import 'dealerpage.i18n.dart';
 import 'dealer.dart';
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
 import '../constants.dart' as Constants;
 import '../timing.dart';
+
+// Returns a friendly human-readable representation of a number as a distance.
+// TODO: Move to a utilities package.
+String distanceDisplay(distance) {
+  String result;
+
+  if (distance > 999) {
+    double reducedDistance = (distance / 10).round() / 100;
+    result = NumberFormat.compact(locale: Constants.MAIN_LOCALE).format(reducedDistance);
+    return '%s kilometers'.i18n.fill([result]);
+  }
+  else {
+    return '%s meters'.i18n.fill([distance]);
+  }
+}
 
 class DealerPage extends StatefulWidget {
   @override
@@ -12,7 +29,10 @@ class DealerPage extends StatefulWidget {
 
 class _DealerPageState extends State<DealerPage> {
   List<Dealer> _dealers = [];
+  Position _devicePosition;
   StreamController<List<Dealer>> controller = StreamController<List<Dealer>>();
+  // TODO: Check if this needs releasing in an overridden dispose-method.
+  StreamSubscription<Position> positionStream;
 
   @override
   void initState() {
@@ -34,11 +54,59 @@ class _DealerPageState extends State<DealerPage> {
         controller.addError(e.toString());
       }
     });
+
+    startGeolocator();
+  }
+
+  void startGeolocator() {
+
+    var geolocator = Geolocator();
+    var locationOptions = LocationOptions(
+      accuracy: LocationAccuracy.high,
+      distanceFilter: 20,
+    );
+    positionStream = geolocator.getPositionStream(locationOptions).listen((Position position) async {
+      if (position != null) {
+
+        // Find and remember the device's location.
+        _devicePosition = Position(
+          latitude: position.latitude,
+          longitude: position.longitude,
+        );
+
+        // Iterate through the dealers and update their distances.
+        for (var dealer in _dealers) {
+          dealer.distance = (await Geolocator().distanceBetween(
+            position.latitude,
+            position.longitude,
+            dealer.position.latitude,
+            dealer.position.longitude,
+          )).round();
+        }
+
+        // Proper order is by distance, if available.
+        orderProperly(_dealers);
+
+        // Notify the UI.
+        controller.add(_dealers);
+      }
+    });
   }
 
   void orderProperly(dealers) {
     dealers.sort((Dealer a, Dealer b) {
-      return a.next_opening.opens.compareTo(b.next_opening.opens);
+      int result;
+
+      // First try to order by distance.
+      result = a.distance - b.distance;
+
+      // If distance is equal between stores (which only happens when
+      // geolocation is unavailable), order by opening hours instead.
+      if (result == 0) {
+        result = a.next_opening.opens.compareTo(b.next_opening.opens);
+      }
+
+      return result;
     });
   }
 
@@ -96,7 +164,13 @@ class _DealerPageState extends State<DealerPage> {
 
     }
 
+    // If we've received location data so far, we'll add the distance.
+    if (_devicePosition != null) {
+      description += '\n' + '%s away.'.i18n.fill([distanceDisplay(dealer.distance)]);
+    }
+
     return ListTile(
+      isThreeLine: true,
       leading: CircleAvatar(
         backgroundImage: NetworkImage(dealer.image_url),
       ),

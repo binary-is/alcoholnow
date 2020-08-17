@@ -33,6 +33,15 @@ extension Localization on String {
     'en_us': 'Closed all day.',
     'is_is': 'Lokað í allan dag.',
   } + {
+    'en_us': '%s away.',
+    'is_is': 'Í %s fjarlægð.',
+  } + {
+    'en_us': '%s meters',
+    'is_is': '%s metra',
+  } + {
+    'en_us': '%s kilometers',
+    'is_is': '%s kílómetra',
+  } + {
     'en_us': 'Error:',
     'is_is': 'Villa:',
   } + {

@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
+import 'package:geolocator/geolocator.dart';
 import '../constants.dart' as Constants;
 import '../timing.dart';
 
@@ -66,8 +67,10 @@ class Dealer {
   final String image_url;
   final OpeningHours today;
   final OpeningHours next_opening;
+  final Position position;
+  int distance = 0; // Meters.
 
-  Dealer({this.name, this.image_url, this.today, this.next_opening});
+  Dealer({this.name, this.image_url, this.today, this.next_opening, this.position});
 
   factory Dealer.fromJson(Map<String, dynamic> json) {
 
@@ -86,6 +89,10 @@ class Dealer {
       image_url: Constants.STORE_WEBSITE_URL + json['ImageUrl'],
       today: OpeningHours.fromPrimitive(json['today']),
       next_opening: next_opening,
+      position: Position(
+        latitude: double.parse(json['GPSN']),
+        longitude: double.parse(json['GPSW']),
+      ),
     );
   }
 
