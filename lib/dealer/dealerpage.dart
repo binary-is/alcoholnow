@@ -28,11 +28,23 @@ class DealerPage extends StatefulWidget {
 }
 
 class _DealerPageState extends State<DealerPage> {
+  // A list of all our dealers. This list gets updated when new data arrives,
+  // such as a new device location, and then the UI is updated by adding this
+  // list again to the dealerController.
   List<Dealer> _dealers = [];
+
+  // Last known device position. If still null, then no position data has arrived yet.
   Position _devicePosition;
-  StreamController<List<Dealer>> controller = StreamController<List<Dealer>>();
-  // TODO: Check if this needs releasing in an overridden dispose-method.
-  StreamSubscription<Position> positionStream;
+
+  // A stream controller for the dealers. When dealer data (in _dealer) is
+  // updated, the UI is updated by calling dealerController.add(_dealers).
+  StreamController<List<Dealer>> dealerController = StreamController<List<Dealer>>();
+
+  // A stream subscription for new device positions. It is not really needed,
+  // but we cancel the subscription on the disposal of the page for the sake
+  // of formality. It shouldn't be strictly necessary because the stream is
+  // used for as long as the app remains open.
+  StreamSubscription<Position> positionSubscription;
 
   @override
   void initState() {
@@ -67,23 +79,32 @@ class _DealerPageState extends State<DealerPage> {
       orderProperly(_dealers);
 
       // Notify the UI about new dealer data.
-      controller.add(_dealers);
+      dealerController.add(_dealers);
 
       // Start listening for new location updates.
-      positionStream = geolocator.getPositionStream(locationOptions).listen(updateDealerPositions);
+      positionSubscription = geolocator.getPositionStream(locationOptions).listen(updateDealerPositions);
 
     }).catchError((e) {
       final String errorClass = e.runtimeType.toString();
       if (errorClass == 'SocketException') {
-        controller.addError('The internet broke or something.'.i18n);
+        dealerController.addError('The internet broke or something.'.i18n);
       }
       else if (errorClass == 'HttpException') {
-        controller.addError('Remote server is drunk.'.i18n);
+        dealerController.addError('Remote server is drunk.'.i18n);
       }
       else {
-        controller.addError(e.toString());
+        dealerController.addError(e.toString());
       }
     });
+  }
+
+  @override
+  void dispose() {
+    // Not really needed, because the stream is used for as long as the app
+    // lives, but we still do this for the sake of formality.
+    positionSubscription.cancel();
+
+    super.dispose();
   }
 
   void updateDealerPositions(Position position) async {
@@ -109,7 +130,7 @@ class _DealerPageState extends State<DealerPage> {
       orderProperly(_dealers);
 
       // Notify the UI.
-      controller.add(_dealers);
+      dealerController.add(_dealers);
     }
   }
 
@@ -213,7 +234,7 @@ class _DealerPageState extends State<DealerPage> {
     var body;
 
     body = StreamBuilder<List<Dealer>>(
-      stream: controller.stream,
+      stream: dealerController.stream,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
 
