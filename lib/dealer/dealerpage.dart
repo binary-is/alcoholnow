@@ -58,6 +58,33 @@ class _DealerPageState extends State<DealerPage> {
     startGeolocator();
   }
 
+  void updateDealerPositions(Position position) async {
+    if (position != null) {
+
+      // Find and remember the device's location.
+      _devicePosition = Position(
+        latitude: position.latitude,
+        longitude: position.longitude,
+      );
+
+      // Iterate through the dealers and update their distances.
+      for (var dealer in _dealers) {
+        dealer.distance = (await Geolocator().distanceBetween(
+          position.latitude,
+          position.longitude,
+          dealer.position.latitude,
+          dealer.position.longitude,
+        )).round();
+      }
+
+      // Proper order is by distance, if available.
+      orderProperly(_dealers);
+
+      // Notify the UI.
+      controller.add(_dealers);
+    }
+  }
+
   void startGeolocator() {
 
     var geolocator = Geolocator();
@@ -65,32 +92,7 @@ class _DealerPageState extends State<DealerPage> {
       accuracy: LocationAccuracy.high,
       distanceFilter: 20,
     );
-    positionStream = geolocator.getPositionStream(locationOptions).listen((Position position) async {
-      if (position != null) {
-
-        // Find and remember the device's location.
-        _devicePosition = Position(
-          latitude: position.latitude,
-          longitude: position.longitude,
-        );
-
-        // Iterate through the dealers and update their distances.
-        for (var dealer in _dealers) {
-          dealer.distance = (await Geolocator().distanceBetween(
-            position.latitude,
-            position.longitude,
-            dealer.position.latitude,
-            dealer.position.longitude,
-          )).round();
-        }
-
-        // Proper order is by distance, if available.
-        orderProperly(_dealers);
-
-        // Notify the UI.
-        controller.add(_dealers);
-      }
-    });
+    positionStream = geolocator.getPositionStream(locationOptions).listen(updateDealerPositions);
   }
 
   void orderProperly(dealers) {
