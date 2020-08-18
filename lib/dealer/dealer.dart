@@ -4,7 +4,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
 import 'package:geolocator/geolocator.dart';
 import '../constants.dart' as Constants;
-import '../timing.dart';
+import '../timing_utils.dart';
 
 class OpeningHours {
 
