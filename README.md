@@ -9,6 +9,9 @@
 ## Disclaimer
 This project was only developed as an exercise in Android app development using Flutter. There is no serious effort behind it and no commitment to maintain it or even fix bugs, except to keep the app working on the mobile phone of the author and perhaps the author's wife.
 
+## License
+Distributed under the terms of the open-source MIT license. See the file `LICENSE` for details.
+
 ## Authors
 - Helgi Hrafn Gunnarsson <helgi@binary.is>
 
