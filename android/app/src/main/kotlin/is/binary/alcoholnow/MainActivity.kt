@@ -1,4 +1,4 @@
-package com.example.alcoholnow
+package `is`.binary.alcoholnow
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
