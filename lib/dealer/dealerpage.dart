@@ -69,7 +69,7 @@ class _DealerPageState extends State<DealerPage> {
       // Start listening for new location updates.
       _positionSubscription = geolocator.getPositionStream(locationOptions).listen(updateDealerPositions);
 
-    }).catchError((e) {
+    }).catchError((e, s) {
       final String errorClass = e.runtimeType.toString();
       if (errorClass == 'SocketException') {
         _dealerController.addError('The internet broke or something.'.i18n);
@@ -79,6 +79,7 @@ class _DealerPageState extends State<DealerPage> {
       }
       else {
         _dealerController.addError(e.toString());
+        print(s.toString());
       }
     });
   }
