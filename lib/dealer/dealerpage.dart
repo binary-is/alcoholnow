@@ -103,12 +103,14 @@ class _DealerPageState extends State<DealerPage> {
 
       // Iterate through the dealers and update their distances.
       for (var dealer in _dealers) {
-        dealer.distance = (await Geolocator().distanceBetween(
-          position.latitude,
-          position.longitude,
-          dealer.position.latitude,
-          dealer.position.longitude,
-        )).round();
+        if (dealer.position != null) {
+          dealer.distance = (await Geolocator().distanceBetween(
+            position.latitude,
+            position.longitude,
+            dealer.position.latitude,
+            dealer.position.longitude,
+          )).round();
+        }
       }
 
       // Proper order is by distance, if available.

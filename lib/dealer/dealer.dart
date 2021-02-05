@@ -101,15 +101,20 @@ class Dealer {
       }
     }
 
+    Position position;
+    if (json['GPSN'].length > 0 && json['GPSW'].length > 0) {
+      position = Position(
+        latitude: double.parse(json['GPSN']),
+        longitude: double.parse(json['GPSW']),
+      );
+    }
+
     return Dealer(
       name: json['Name'],
       image_url: Constants.STORE_WEBSITE_URL + json['ImageUrl'],
       today: OpeningHours.fromPrimitive(json['today']),
       next_opening: next_opening,
-      position: Position(
-        latitude: double.parse(json['GPSN']),
-        longitude: double.parse(json['GPSW']),
-      ),
+      position: position,
     );
   }
 
