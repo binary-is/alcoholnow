@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dealerpage.i18n.dart';
 import 'dealer.dart';
+import 'package:flutter/foundation.dart' as Foundation;
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import '../constants.dart' as Constants;
@@ -79,7 +80,9 @@ class _DealerPageState extends State<DealerPage> {
       }
       else {
         _dealerController.addError(e.toString());
-        print(s.toString());
+        if (!Foundation.kReleaseMode) {
+          print(s.toString());
+        }
       }
     });
   }
