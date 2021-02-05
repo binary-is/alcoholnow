@@ -47,12 +47,29 @@ class OpeningHours {
     // and closes at 6:00 PM.
     final primitive_hours = json['open'].split(' - ');
 
+    // A function for turning primitive hour string to proper datetime data.
+    // The JSON data is a bit inconsistent here, denoting full hours with a
+    // simple integer, i.e. ("8" for 8 AM and "16" for 4 PM), but with a
+    // preceding zero in non-full hours (i.e. "08:30" for 8:30 AM).
+    DateTime parsePrimitiveHour(primitive_hour) {
+      int hour = 0;
+      int minute = 0;
+
+      final splitted = primitive_hour.split(':');
+      hour = int.parse(splitted[0]);
+      if (splitted.length > 1) {
+        minute = int.parse(splitted[1]);
+      }
+
+      return DateTime(year, month, day, hour, minute);
+    }
+
     // If primitive_hours has exactly two values, we know that the store is
     // open at some point during the day.
     if (primitive_hours.length == 2) {
       return OpeningHours(
-        opens: DateTime(year, month, day, int.parse(primitive_hours[0])),
-        closes: DateTime(year, month, day, int.parse(primitive_hours[1])),
+        opens: parsePrimitiveHour(primitive_hours[0]),
+        closes: parsePrimitiveHour(primitive_hours[1]),
       );
     }
     else {
