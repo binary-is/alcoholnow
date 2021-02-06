@@ -127,12 +127,22 @@ class _DealerPageState extends State<DealerPage> {
 
   void orderProperly(dealers) {
     dealers.sort((Dealer a, Dealer b) {
-      int result;
+      int result = 0;
 
-      // First try to order by distance.
-      result = a.distance - b.distance;
+      // First: Order by open/closed status.
+      if (a.isOpen() && !b.isOpen()) {
+        result = -1;
+      }
+      else if (!a.isOpen() && b.isOpen()) {
+        result = 1;
+      }
 
-      // If distance is equal between stores (which only happens when
+      // Second: Order by distance.
+      if (result == 0) {
+        result = a.distance - b.distance;
+      }
+
+      // Third: If distance is equal between stores (typically when
       // geolocation is unavailable), order by opening hours instead.
       if (result == 0) {
         result = a.next_opening.opens.compareTo(b.next_opening.opens);

@@ -87,6 +87,9 @@ class Dealer {
   final Position position;
   int distance = 0; // Meters.
 
+  // Function cache.
+  bool _is_open = null;
+
   Dealer({this.name, this.image_url, this.today, this.next_opening, this.position});
 
   factory Dealer.fromJson(Map<String, dynamic> json) {
@@ -119,8 +122,11 @@ class Dealer {
   }
 
   bool isOpen() {
-    final now = getNow();
-    return today != null && now.isAfter(today.opens) && now.isBefore(today.closes);
+    if (this._is_open == null) {
+      final now = getNow();
+      this._is_open = today != null && now.isAfter(today.opens) && now.isBefore(today.closes);
+    }
+    return this._is_open;
   }
 
   @override
