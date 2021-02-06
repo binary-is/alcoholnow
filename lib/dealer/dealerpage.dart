@@ -241,9 +241,19 @@ class _DealerPageState extends State<DealerPage> {
 
           final List<ListTile> tiles = [];
           for (var dealer in snapshot.data) {
-            if (dealer.isOpen() || !Constants.HIDE_CLOSED) {
-              tiles.add(buildDealer(dealer));
+
+            // Respect config: HIDE_CLOSED.
+            if (Constants.HIDE_CLOSED && !dealer.isOpen()) {
+              continue;
             }
+
+            // Respect config: HIDE_UNLOCATED.
+            if (Constants.HIDE_UNLOCATED && dealer.position == null) {
+              continue;
+            }
+
+            // Add the dealer to the visible list.
+            tiles.add(buildDealer(dealer));
           }
 
           return Column(
