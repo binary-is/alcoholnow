@@ -145,7 +145,7 @@ Future<List<Dealer>> fetchDealers() async {
   }
   else {
     final response = await http.get(
-      Constants.STORE_DATA_URL,
+      Uri.parse(Constants.STORE_DATA_URL),
       headers: {
         'Content-Type': 'application/json; charset=utf-8'
       }

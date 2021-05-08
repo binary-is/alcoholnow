@@ -22,7 +22,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   i18n_extension: ^3.0.3
-  http: ^0.12.2
+  http: ^0.13.3
   #flutter_launcher_name: ^0.0.1
   flutter_launcher_icons: ^0.9.0
   flutter_native_splash: ^1.1.8+4
