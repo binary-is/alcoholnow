@@ -12,18 +12,18 @@ class OpeningHours {
   // simpler, more readable and possibly even more reliable than trying to
   // parse the input strings as Icelandic short-months with some library.
   static const IcelandicMonthMap = {
-    'jan.': 1,
-    'feb.': 2,
-    'mar.': 3,
-    'apr.': 4,
-    'maí.': 5,
-    'jún.': 6,
-    'júl.': 7,
-    'ágú.': 8,
-    'sep.': 9,
-    'okt.': 10,
-    'nóv.': 11,
-    'des.': 12,
+    'jan': 1,
+    'feb': 2,
+    'mar': 3,
+    'apr': 4,
+    'maí': 5,
+    'jún': 6,
+    'júl': 7,
+    'ágú': 8,
+    'sep': 9,
+    'okt': 10,
+    'nóv': 11,
+    'des': 12,
   };
 
   final DateTime opens;
@@ -40,7 +40,8 @@ class OpeningHours {
 
     // Current year assumed. Calling function must remedy if this is wrong.
     final int year = getNow().year;
-    final int month = IcelandicMonthMap[json['date'].substring(json['date'].indexOf('.') + 2)];
+    final int month_index = json['date'].indexOf('.') + 2;
+    final int month = IcelandicMonthMap[json['date'].substring(month_index, month_index+3)];
     final int day = int.parse(json['date'].substring(0, json['date'].indexOf('.')));
 
     // For example, the string "11 - 18" means that a dealer opens at 11:00 AM
