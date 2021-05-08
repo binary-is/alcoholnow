@@ -15,3 +15,8 @@
 * Closed stores ordered below open stores.
 
 **Note: Unlocated stores are hidden by default because they are not useful in the context of the user needing an immediate solution to alcohol shortage.**
+
+1.1.1
+=====
+
+* Tolerance for unexpected description of month increased to fix crash bug.
