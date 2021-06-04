@@ -107,9 +107,21 @@ class Dealer {
 
     Position position;
     if (json['GPSN'].length > 0 && json['GPSW'].length > 0) {
+
+      // Massage GPS data. It seems to sometimes be manually added and contain
+      // some mistakes like stray spaces or some nonsense following a comma.
+      String gpsn = json['GPSN'].trim();
+      String gpsw = json['GPSW'].trim();
+      if (gpsn.indexOf(',') > -1) {
+        gpsn = gpsn.substring(0, gpsn.indexOf(','));
+      }
+      if (gpsw.indexOf(',') > -1) {
+        gpsw = gpsw.substring(0, gpsw.indexOf(','));
+      }
+
       position = Position(
-        latitude: double.parse(json['GPSN']),
-        longitude: double.parse(json['GPSW']),
+        latitude: double.parse(gpsn),
+        longitude: double.parse(gpsw),
       );
     }
 
