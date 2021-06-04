@@ -20,3 +20,8 @@
 =====
 
 * Tolerance for unexpected description of month increased to fix crash bug.
+
+1.1.2
+=====
+
+* Tolerance for messy GPS data increased to fix crash bug.
