@@ -25,3 +25,10 @@
 =====
 
 * Tolerance for messy GPS data increased to fix crash bug.
+
+1.1.3
+=====
+*No functional changes.*
+
+* Fastlane-compliant metadata directory structure added.
+* Debug-banner removed when running in debug mode.
