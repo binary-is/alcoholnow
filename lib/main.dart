@@ -11,6 +11,7 @@ class AlcoholNowApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: Constants.APP_NAME,
       theme: ThemeData(
         primarySwatch: Colors.blue,
