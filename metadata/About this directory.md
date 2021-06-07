@@ -1,0 +1,1 @@
+This directory is created in a Fastlane-structure, in accordance with [F-Droid instructions](https://f-droid.org/en/docs/All_About_Descriptions_Graphics_and_Screenshots/#fastlane-structure) for storing metadata related to publishing.
