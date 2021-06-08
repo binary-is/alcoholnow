@@ -33,6 +33,12 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
 
+dependency_overrides:
+  geolocator:
+    git:
+      url: https://gitlab.com/free2pass/flutter-geolocator-floss.git
+      ref: geolocator_v7.0.3
+      path: geolocator
 
 dev_dependencies:
   flutter_test:
