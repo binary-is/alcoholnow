@@ -26,23 +26,29 @@ class OpeningHours {
     'des': 12,
   };
 
-  final DateTime opens;
-  final DateTime closes;
+  // When `open` is false, the store is closed throughout the day.
+  final bool open;
+  final DateTime? opens;
+  final DateTime? closes;
 
-  OpeningHours({this.opens, this.closes});
+  OpeningHours({required this.open, this.opens, this.closes});
 
   factory OpeningHours.fromPrimitive(json) {
 
     // Stop wasting time if we know it's closed.
     if (json['open'] == 'Lokað') {
-      return null;
+      return OpeningHours(open: false);
     }
 
     // Current year assumed. Calling function must remedy if this is wrong.
+    final int dot_index = json['date'].indexOf('.') ?? -1;
+    if (dot_index == -1) {
+      // We don't know how to parse this. Assuming it's closed.
+      return OpeningHours(open: false);
+    }
     final int year = getNow().year;
-    final int month_index = json['date'].indexOf('.') + 2;
-    final int month = IcelandicMonthMap[json['date'].substring(month_index, month_index+3)];
-    final int day = int.parse(json['date'].substring(0, json['date'].indexOf('.')));
+    final int month = IcelandicMonthMap[json['date'].substring(dot_index+2, dot_index+5)] ?? -1;
+    final int day = int.parse(json['date'].substring(0, dot_index));
 
     // For example, the string "11 - 18" means that a dealer opens at 11:00 AM
     // and closes at 6:00 PM.
@@ -69,13 +75,14 @@ class OpeningHours {
     // open at some point during the day.
     if (primitive_hours.length == 2) {
       return OpeningHours(
+        open: true,
         opens: parsePrimitiveHour(primitive_hours[0]),
         closes: parsePrimitiveHour(primitive_hours[1]),
       );
     }
     else {
       // Null means that the dealer is not open at any time during the day.
-      return null;
+      return OpeningHours(open: false);
     }
   }
 }
@@ -85,27 +92,33 @@ class Dealer {
   final String image_url;
   final OpeningHours today;
   final OpeningHours next_opening;
-  final Position position;
+  final double latitude;
+  final double longitude;
   int distance = 0; // Meters.
 
   // Function cache.
-  bool _is_open = null;
+  bool? _is_open = null;
 
-  Dealer({this.name, this.image_url, this.today, this.next_opening, this.position});
+  Dealer({required this.name, required this.image_url, required this.today, required this.next_opening, required this.latitude, required this.longitude});
 
   factory Dealer.fromJson(Map<String, dynamic> json) {
 
     // Find the next day (after today) when it's open.
-    OpeningHours next_opening;
+    OpeningHours next_opening = OpeningHours(open: false);
     for (var future_day = 1; future_day <= 7; future_day++) {
       next_opening = OpeningHours.fromPrimitive(json['day${future_day}']);
-      if (next_opening != null) {
+      if (next_opening.open) {
         // This means we've found a day on which it's open.
         break;
       }
     }
 
-    Position position;
+    // The coordinates 0.0/0.0 represent no coordination. Confusion with an
+    // actual location is unlikely enough, seeing that it's somewhere in the
+    // middle of the ocean:
+    // https://www.google.com/maps/place/0°00'00.0"N+0°00'00.0"E/
+    double latitude = 0.0;
+    double longitude = 0.0;
     if (json['GPSN'].length > 0 && json['GPSW'].length > 0) {
 
       // Massage GPS data. It seems to sometimes be manually added and contain
@@ -118,11 +131,8 @@ class Dealer {
       if (gpsw.indexOf(',') > -1) {
         gpsw = gpsw.substring(0, gpsw.indexOf(','));
       }
-
-      position = Position(
-        latitude: double.parse(gpsn),
-        longitude: double.parse(gpsw),
-      );
+      latitude = double.parse(gpsn);
+      longitude = double.parse(gpsw);
     }
 
     return Dealer(
@@ -130,16 +140,17 @@ class Dealer {
       image_url: Constants.STORE_WEBSITE_URL + json['ImageUrl'],
       today: OpeningHours.fromPrimitive(json['today']),
       next_opening: next_opening,
-      position: position,
+      latitude: latitude,
+      longitude: longitude,
     );
   }
 
   bool isOpen() {
     if (this._is_open == null) {
       final now = getNow();
-      this._is_open = today != null && now.isAfter(today.opens) && now.isBefore(today.closes);
+      this._is_open = today.open && now.isAfter(today.opens ?? now) && now.isBefore(today.closes ?? now);
     }
-    return this._is_open;
+    return this._is_open ?? false;
   }
 
   @override

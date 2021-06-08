@@ -20,7 +20,7 @@ class _DealerPageState extends State<DealerPage> {
   List<Dealer> _dealers = [];
 
   // Last known device position. If still null, then no position data has arrived yet.
-  Position _devicePosition;
+  Position? _devicePosition;
 
   // A stream controller for the dealers. When dealer data (in _dealer) is
   // updated, the UI is updated by calling _dealerController.add(_dealers).
@@ -30,18 +30,11 @@ class _DealerPageState extends State<DealerPage> {
   // but we cancel the subscription on the disposal of the page for the sake
   // of formality. It shouldn't be strictly necessary because the stream is
   // used for as long as the app remains open.
-  StreamSubscription<Position> _positionSubscription;
+  StreamSubscription<Position>? _positionSubscription;
 
   @override
   void initState() {
     super.initState();
-
-    // Initialize geolocation stuff.
-    var geolocator = Geolocator();
-    var locationOptions = LocationOptions(
-      accuracy: LocationAccuracy.high,
-      distanceFilter: 20,
-    );
 
     // Fetch dealers from remote source.
     fetchDealers().then((dealers) async {
@@ -49,11 +42,10 @@ class _DealerPageState extends State<DealerPage> {
       _dealers = dealers;
 
       // Check if we already have location data to order by.
-      if (
-        await geolocator.isLocationServiceEnabled()
-        && await geolocator.checkGeolocationPermissionStatus() == GeolocationStatus.granted
-      ) {
-        Position position = await geolocator.getCurrentPosition(
+      final bool enabled = await Geolocator.isLocationServiceEnabled();
+      final LocationPermission permission = await Geolocator.checkPermission();
+      if (enabled && (permission == LocationPermission.whileInUse || permission == LocationPermission.always)) {
+        Position position = await Geolocator.getCurrentPosition(
           desiredAccuracy: LocationAccuracy.high,
         );
         if (position != null) {
@@ -68,7 +60,10 @@ class _DealerPageState extends State<DealerPage> {
       _dealerController.add(_dealers);
 
       // Start listening for new location updates.
-      _positionSubscription = geolocator.getPositionStream(locationOptions).listen(updateDealerPositions);
+      _positionSubscription = Geolocator.getPositionStream(
+        desiredAccuracy: LocationAccuracy.high,
+        distanceFilter: 20,
+      ).listen(updateDealerPositions);
 
     }).catchError((e, s) {
       final String errorClass = e.runtimeType.toString();
@@ -91,29 +86,31 @@ class _DealerPageState extends State<DealerPage> {
   void dispose() {
     // Not really needed, because the stream is used for as long as the app
     // lives, but we still do this for the sake of formality.
-    _positionSubscription.cancel();
+    _positionSubscription?.cancel();
 
     super.dispose();
   }
 
-  void updateDealerPositions(Position position) async {
+  updateDealerPositions(Position position) async {
     if (position != null) {
 
       // Find and remember the device's location.
-      _devicePosition = Position(
-        latitude: position.latitude,
-        longitude: position.longitude,
-      );
+      _devicePosition = position;
+
+      print('Pos: ${_devicePosition}');
 
       // Iterate through the dealers and update their distances.
       for (var dealer in _dealers) {
-        if (dealer.position != null) {
-          dealer.distance = (await Geolocator().distanceBetween(
+        print('Dealer lat: ${dealer.latitude}');
+        print('Dealer lon: ${dealer.longitude}');
+        if (dealer.latitude != 0.0 && dealer.longitude != 0.0) {
+          dealer.distance = (await Geolocator.distanceBetween(
             position.latitude,
             position.longitude,
-            dealer.position.latitude,
-            dealer.position.longitude,
+            dealer.latitude,
+            dealer.longitude,
           )).round();
+          print('Dealer dist: ${dealer.distance}');
         }
       }
 
@@ -144,8 +141,10 @@ class _DealerPageState extends State<DealerPage> {
 
       // Third: If distance is equal between stores (typically when
       // geolocation is unavailable), order by opening hours instead.
-      if (result == 0) {
-        result = a.next_opening.opens.compareTo(b.next_opening.opens);
+      DateTime? a_opens = a.next_opening.opens;
+      DateTime? b_opens = b.next_opening.opens;
+      if (result == 0 && a_opens != null && b_opens != null) {
+        result = a_opens.compareTo(b_opens);
       }
 
       return result;
@@ -240,7 +239,8 @@ class _DealerPageState extends State<DealerPage> {
         if (snapshot.hasData) {
 
           final List<ListTile> tiles = [];
-          for (var dealer in snapshot.data) {
+          final data = snapshot.data ?? [];
+          for (var dealer in data) {
 
             // Respect config: HIDE_CLOSED.
             if (Constants.HIDE_CLOSED && !dealer.isOpen()) {
@@ -248,7 +248,7 @@ class _DealerPageState extends State<DealerPage> {
             }
 
             // Respect config: HIDE_UNLOCATED.
-            if (Constants.HIDE_UNLOCATED && dealer.position == null) {
+            if (Constants.HIDE_UNLOCATED && dealer.latitude == 0.0 && dealer.longitude == 0.0) {
               continue;
             }
 
