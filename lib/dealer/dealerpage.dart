@@ -97,12 +97,8 @@ class _DealerPageState extends State<DealerPage> {
       // Find and remember the device's location.
       _devicePosition = position;
 
-      print('Pos: ${_devicePosition}');
-
       // Iterate through the dealers and update their distances.
       for (var dealer in _dealers) {
-        print('Dealer lat: ${dealer.latitude}');
-        print('Dealer lon: ${dealer.longitude}');
         if (dealer.latitude != 0.0 && dealer.longitude != 0.0) {
           dealer.distance = (await Geolocator.distanceBetween(
             position.latitude,
@@ -110,7 +106,6 @@ class _DealerPageState extends State<DealerPage> {
             dealer.latitude,
             dealer.longitude,
           )).round();
-          print('Dealer dist: ${dealer.distance}');
         }
       }
 
