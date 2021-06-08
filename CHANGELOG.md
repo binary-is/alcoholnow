@@ -32,3 +32,9 @@
 
 * Fastlane-compliant metadata directory structure added.
 * Debug-banner removed when running in debug mode.
+
+1.1.4
+=====
+
+* Null-safety implemented.
+* Dependencies updated.
