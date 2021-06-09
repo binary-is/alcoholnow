@@ -31,6 +31,7 @@
 *No functional changes.*
 
 * Fastlane-compliant metadata directory structure added.
+
 * Debug-banner removed when running in debug mode.
 
 1.1.4
@@ -38,3 +39,11 @@
 
 * Null-safety implemented.
 * Dependencies updated.
+
+1.1.5
+=====
+
+* Flutter's geolocator replaced with [Flutter Geolocator FLOSS](https://gitlab.com/free2pass/flutter-geolocator-floss), for compliance with F-Droid.
+
+
+Build process: Sha256-checksum added for Gradle download at the suggestion of F-Droid.
