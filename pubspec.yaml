@@ -37,7 +37,7 @@ dependency_overrides:
   geolocator:
     git:
       url: https://gitlab.com/free2pass/flutter-geolocator-floss.git
-      ref: geolocator_v7.0.3
+      ref: master
       path: geolocator
 
 dev_dependencies:
