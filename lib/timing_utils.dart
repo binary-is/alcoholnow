@@ -7,8 +7,3 @@ DateTime getNow() {
   //now = now.add(Duration(hours: -2));
   return now;
 }
-
-DateTime dayAfter(dt) {
-  return dt.add(new Duration(days: 1));
-}
-

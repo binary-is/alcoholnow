@@ -1,19 +1,43 @@
 import 'dart:async';
-import 'dealerpage.i18n.dart';
-import 'dealer.dart';
+import 'dealerlist.i18n.dart';
+import '../models/dealer.dart';
 import 'package:flutter/foundation.dart' as Foundation;
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import '../constants.dart' as Constants;
-import '../display_utils.dart';
 import '../timing_utils.dart';
+import 'package:intl/intl.dart';
 
-class DealerPage extends StatefulWidget {
-  @override
-  _DealerPageState createState() => _DealerPageState();
+String hourDisplay(dt) {
+    return DateFormat('HH:mm').format(dt);
 }
 
-class _DealerPageState extends State<DealerPage> {
+String dateDisplay(dt) {
+    // The formatting here is hard-coded to Icelandic for now, but this should
+    // be changed once we make other languages/locales selectable by the user.
+    return DateFormat.MMMMd(Constants.MAIN_LOCALE).format(dt);
+}
+
+// Returns a friendly human-readable representation of a number as a distance.
+String distanceDisplay(distance) {
+  String result;
+
+  if (distance > 999) {
+    double reducedDistance = (distance / 10).round() / 100;
+    result = NumberFormat.compact(locale: Constants.MAIN_LOCALE).format(reducedDistance);
+    return '%s kilometers'.i18n.fill([result]);
+  }
+  else {
+    return '%s meters'.i18n.fill([distance]);
+  }
+}
+
+class DealerList extends StatefulWidget {
+  @override
+  _DealerListState createState() => _DealerListState();
+}
+
+class _DealerListState extends State<DealerList> {
   // A list of all our dealers. This list gets updated when new data arrives,
   // such as a new device location, and then the UI is updated by adding this
   // list again to the _dealerController.

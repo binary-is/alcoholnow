@@ -1,10 +1,12 @@
 import 'package:i18n_extension/i18n_extension.dart';
-import 'constants.dart' as Constants;
 
 extension Localization on String {
   static var _t = Translations('en_us') + {
-    'en_us': 'Alcohol Now',
-    'is_is': Constants.APP_NAME,
+    'en_us': 'Settings',
+    'is_is': 'Stillingar',
+  } + {
+    'en_us': 'Language',
+    'is_is': 'Tungumál',
   };
 
   String get i18n => localize(this, _t);
