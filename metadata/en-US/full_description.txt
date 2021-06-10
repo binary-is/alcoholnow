@@ -1,7 +1,5 @@
 A panic button for immediately knowing the distances and opening hours to alcohol stores in Iceland.
 
-**Features**
-
+Features:
 * An immediate list of alcohol stores in Iceland, their opening hours and whether they are currently open.
-
 * Alcohol dealers are ordered by distance (when location services are available and enabled).
