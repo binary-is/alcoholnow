@@ -38,6 +38,7 @@
 =====
 
 * Null-safety implemented.
+
 * Dependencies updated.
 
 1.1.5
@@ -46,4 +47,10 @@
 * Flutter's geolocator replaced with [Flutter Geolocator FLOSS](https://gitlab.com/free2pass/flutter-geolocator-floss), for compliance with F-Droid.
 
 
-Build process: Sha256-checksum added for Gradle download at the suggestion of F-Droid.
+* Build process: Sha256-checksum added for Gradle download at the suggestion of F-Droid.
+
+1.1.6
+=====
+*No functional changes.*
+
+* Markdown removed from full description in metadata for compatibility reasons.
