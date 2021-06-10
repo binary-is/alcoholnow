@@ -226,9 +226,7 @@ class _DealerPageState extends State<DealerPage> {
 
   @override
   Widget build(BuildContext context) {
-    var body;
-
-    body = StreamBuilder<List<Dealer>>(
+    return StreamBuilder<List<Dealer>>(
       stream: _dealerController.stream,
       builder: (context, snapshot) {
         if (snapshot.hasData) {
@@ -295,13 +293,6 @@ class _DealerPageState extends State<DealerPage> {
           )
         );
       },
-    );
-
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Alcohol Now'.i18n),
-      ),
-      body: body
     );
   }
 }

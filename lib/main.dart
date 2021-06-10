@@ -1,5 +1,6 @@
 import 'constants.dart' as Constants;
 import 'dealer/dealerpage.dart';
+import 'main.i18n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:i18n_extension/i18n_widget.dart';
@@ -18,7 +19,7 @@ class AlcoholNowApp extends StatelessWidget {
       ),
       home: I18n(
         initialLocale: Locale('is', 'IS'),
-        child: DealerPage(),
+        child: StatefulScaffold(),
       ),
 
       localizationsDelegates: [
@@ -34,3 +35,22 @@ class AlcoholNowApp extends StatelessWidget {
   }
 }
 
+// The translation mechanism only works on stateful widgets, so we make this
+// stateful version of the Scaffold widget only to contain things we'll want
+// to translate.
+class StatefulScaffold extends StatefulWidget {
+  @override
+  _StatefulScaffoldState createState() => _StatefulScaffoldState();
+}
+
+class _StatefulScaffoldState extends State<StatefulScaffold> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Alcohol Now'.i18n),
+      ),
+      body: DealerPage(),
+    );
+  }
+}
