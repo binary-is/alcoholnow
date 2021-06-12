@@ -192,7 +192,7 @@ class _DealerListState extends State<DealerList> {
       // Configure the text explaining that the dealer is closed and indicate
       // when it opens again if such information is available.
 
-      if (dealer.today != null && dealer.today.opens.isAfter(now)) {
+      if (dealer.today?.opens != null && dealer.today.opens.isAfter(now)) {
         sign = TextSpan(
           text: 'Opens later today!'.i18n,
           style: TextStyle(color: Colors.green),
@@ -210,7 +210,8 @@ class _DealerListState extends State<DealerList> {
         if (dealer.today == null) {
           description = 'Closed all day.'.i18n;
         }
-        else {
+        // Checking for null because sometimes data is missing.
+        else if (dealer.today.closes != null) {
           description = 'Closed at %s.'.i18n.fill([hourDisplay(dealer.today.closes)]);
         }
 
@@ -244,7 +245,7 @@ class _DealerListState extends State<DealerList> {
           ],
         ),
       ),
-      subtitle: Text(description),
+      subtitle: Text(description.trim()),
     );
   }
 
