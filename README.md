@@ -9,7 +9,7 @@
 ## Installing and building
 
 ### Downloadable packages
-If you just want to install it on your Android phone, you can download the most recent version of the appropriate `apk` package on the [GitHub release page](https://github.com/binary-is/alcoholnow/releases). Packages are provided for each architecture, but if you don't know your Android device's architecture, you can use the one called `alcoholnow-<version>.apk`. It works for all Android architectures but is about three times as big as the architecture-specific packages.
+If you just want to install it on your Android phone, you can download the most recent version of the appropriate `apk` package on the [GitHub release page](https://github.com/binary-is/alcoholnow/releases) or from F-Droid [here](https://f-droid.org/packages/is.binary.alcoholnow/). Packages are provided for each architecture, but if you don't know your Android device's architecture, you can use the one called `alcoholnow-<version>.apk`. It works for all Android architectures but is about three times as big as the architecture-specific packages.
 
 **Note**: Your phone will warn you about the package not being from a known, trusted source. Proceed only if you trust this repository. If you're feeling paranoid, you can build your own package.
 
