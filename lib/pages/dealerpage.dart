@@ -13,12 +13,10 @@ class _DealerPageState extends State<DealerPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Alcohol Now'.i18n),
-        /* Commented until complete.
         leading: IconButton(
           icon: Icon(Icons.settings),
           onPressed: () => Navigator.of(context).pushNamed('/settings'),
         ),
-        */
       ),
       body: DealerList(),
     );

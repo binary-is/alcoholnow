@@ -7,6 +7,7 @@ import 'package:geolocator/geolocator.dart';
 import '../constants.dart' as Constants;
 import '../timing_utils.dart';
 import 'package:intl/intl.dart';
+import 'package:i18n_extension/i18n_widget.dart';
 
 String hourDisplay(dt) {
     return DateFormat('HH:mm').format(dt);
@@ -15,7 +16,7 @@ String hourDisplay(dt) {
 String dateDisplay(dt) {
     // The formatting here is hard-coded to Icelandic for now, but this should
     // be changed once we make other languages/locales selectable by the user.
-    return DateFormat.MMMMd(Constants.MAIN_LOCALE).format(dt);
+    return DateFormat.MMMMd(I18n.locale.toLanguageTag()).format(dt);
 }
 
 // Returns a friendly human-readable representation of a number as a distance.
@@ -24,7 +25,7 @@ String distanceDisplay(distance) {
 
   if (distance > 999) {
     double reducedDistance = (distance / 10).round() / 100;
-    result = NumberFormat.compact(locale: Constants.MAIN_LOCALE).format(reducedDistance);
+    result = NumberFormat.compact(locale: I18n.locale.toLanguageTag()).format(reducedDistance);
     return '%s kilometers'.i18n.fill([result]);
   }
   else {

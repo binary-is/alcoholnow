@@ -1,20 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_settings_screens/flutter_settings_screens.dart';
 import 'package:i18n_extension/i18n_widget.dart';
 import 'constants.dart' as Constants;
+import 'language.dart';
 import 'pages/dealerpage.dart';
 import 'pages/settingspage.dart';
 
-void main() => runApp(AlcoholNowApp());
+void main() async {
+  await Settings.init();
+  runApp(AlcoholNowApp());
+}
 
 class AlcoholNowApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return I18n(
-      initialLocale: Locale('is', 'IS'),
-      child: MaterialApp(
+    final String languageTag = Settings.getValue('languageTag', '');
+    final Locale? locale = getLocaleByLanguageTag(languageTag) ?? Constants.DEFAULT_LOCALE;
 
+    return I18n(
+      initialLocale: locale,
+      child: MaterialApp(
         // Development and miscellaneous.
         debugShowCheckedModeBanner: false,
 
@@ -38,10 +45,8 @@ class AlcoholNowApp extends StatelessWidget {
           GlobalCupertinoLocalizations.delegate,
         ],
         supportedLocales: [
-          const Locale('en', 'US'),
-          const Locale('is', 'IS'),
+          for (Language language in languages) language.locale,
         ],
-
       ),
     );
   }
