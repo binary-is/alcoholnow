@@ -54,3 +54,10 @@
 *No functional changes.*
 
 * Markdown removed from full description in metadata for compatibility reasons.
+
+1.2.0
+=====
+
+* Tolerance increased for faulty data.
+
+* Ability to change languages via settings.
