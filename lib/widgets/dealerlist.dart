@@ -14,8 +14,6 @@ String hourDisplay(dt) {
 }
 
 String dateDisplay(dt) {
-    // The formatting here is hard-coded to Icelandic for now, but this should
-    // be changed once we make other languages/locales selectable by the user.
     return DateFormat.MMMMd(I18n.locale.toLanguageTag()).format(dt);
 }
 
