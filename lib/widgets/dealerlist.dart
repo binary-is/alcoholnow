@@ -303,7 +303,7 @@ class _DealerListState extends State<DealerList> {
                 ),
                 Text(
                   snapshot.error.toString(),
-                  style: Theme.of(context).textTheme.body1,
+                  style: Theme.of(context).textTheme.bodyText2,
                 ),
               ],
             ),
@@ -313,7 +313,7 @@ class _DealerListState extends State<DealerList> {
         return Center(
           child: Text(
             'Loading...'.i18n,
-            style: Theme.of(context).textTheme.headline
+            style: Theme.of(context).textTheme.headline1,
           )
         );
       },

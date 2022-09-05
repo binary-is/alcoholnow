@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.0
 
 dependency_overrides:
+  platform: ^3.1.0
   geolocator:
     git:
       url: https://gitlab.com/hanntech-gmbh/free2pass/flutter-geolocator-floss
