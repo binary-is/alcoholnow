@@ -61,3 +61,11 @@
 * Tolerance increased for faulty data.
 
 * Ability to change languages via settings.
+
+1.2.1
+=====
+*No functional changes.*
+
+* Dependencies and code upgraded.
+
+* Order of entries in changelog (this file) reversed to descending by time.

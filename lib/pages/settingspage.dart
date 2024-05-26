@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_settings_screens/flutter_settings_screens.dart';
-import 'package:i18n_extension/i18n_widget.dart';
+import 'package:i18n_extension/i18n_extension.dart';
 import 'settingspage.i18n.dart';
 import '../constants.dart' as Constants;
 import '../language.dart';
@@ -9,10 +9,7 @@ class SettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final String languageTag = Settings.getValue(
-      'languageTag',
-      Constants.DEFAULT_LOCALE.toLanguageTag()
-    );
+    final String languageTag = Settings.getValue('languageTag') ?? Constants.DEFAULT_LOCALE.toLanguageTag();
 
     int selectedValue = getLanguageTagOrder(languageTag) + 1;
 

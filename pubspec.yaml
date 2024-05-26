@@ -11,32 +11,31 @@ description: A panic button for immediately knowing the distances and opening ho
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.2.0+6
+version: 1.2.1+7
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=3.4.1"
 
 dependencies:
   flutter:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  i18n_extension: ^4.1.0
-  http: ^0.13.3
+  i18n_extension: ^12.0.1
+  http: ^1.2.1
   #flutter_launcher_name: ^0.0.1
-  flutter_launcher_icons: ^0.9.0
-  flutter_native_splash: ^1.1.8+4
-  geolocator: ^7.0.3
-  intl: ^0.17.0
-  flutter_settings_screens: ^0.3.0-null-safety
-  shared_preferences: ^2.0.6
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+  geolocator: ^7.6.2
+  intl: ^0.19.0
+  flutter_settings_screens: ^0.3.4
+  shared_preferences: ^2.2.3
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
 
 dependency_overrides:
-  platform: ^3.1.0
   geolocator:
     git:
       url: https://gitlab.com/hanntech-gmbh/free2pass/flutter-geolocator-floss

@@ -7,7 +7,7 @@ import 'package:geolocator/geolocator.dart';
 import '../constants.dart' as Constants;
 import '../timing_utils.dart';
 import 'package:intl/intl.dart';
-import 'package:i18n_extension/i18n_widget.dart';
+import 'package:i18n_extension/i18n_extension.dart';
 
 String hourDisplay(dt) {
     return DateFormat('HH:mm').format(dt);
@@ -71,10 +71,8 @@ class _DealerListState extends State<DealerList> {
         Position position = await Geolocator.getCurrentPosition(
           desiredAccuracy: LocationAccuracy.high,
         );
-        if (position != null) {
-          await updateDealerPositions(position);
-        }
-      }
+        await updateDealerPositions(position);
+            }
 
       // Order dealers according to available parameters.
       orderProperly(_dealers);
@@ -115,30 +113,27 @@ class _DealerListState extends State<DealerList> {
   }
 
   updateDealerPositions(Position position) async {
-    if (position != null) {
+    // Find and remember the device's location.
+    _devicePosition = position;
 
-      // Find and remember the device's location.
-      _devicePosition = position;
-
-      // Iterate through the dealers and update their distances.
-      for (var dealer in _dealers) {
-        if (dealer.latitude != 0.0 && dealer.longitude != 0.0) {
-          dealer.distance = (await Geolocator.distanceBetween(
-            position.latitude,
-            position.longitude,
-            dealer.latitude,
-            dealer.longitude,
-          )).round();
-        }
+    // Iterate through the dealers and update their distances.
+    for (var dealer in _dealers) {
+      if (dealer.latitude != 0.0 && dealer.longitude != 0.0) {
+        dealer.distance = (await Geolocator.distanceBetween(
+          position.latitude,
+          position.longitude,
+          dealer.latitude,
+          dealer.longitude,
+        )).round();
       }
-
-      // Proper order is by distance, if available.
-      orderProperly(_dealers);
-
-      // Notify the UI.
-      _dealerController.add(_dealers);
     }
-  }
+
+    // Proper order is by distance, if available.
+    orderProperly(_dealers);
+
+    // Notify the UI.
+    _dealerController.add(_dealers);
+    }
 
   void orderProperly(dealers) {
     dealers.sort((Dealer a, Dealer b) {
@@ -299,11 +294,11 @@ class _DealerListState extends State<DealerList> {
               children: <Widget>[
                 Text(
                  'Error:'.i18n,
-                  style: Theme.of(context).textTheme.headline6,
+                  style: Theme.of(context).textTheme.titleLarge,
                 ),
                 Text(
                   snapshot.error.toString(),
-                  style: Theme.of(context).textTheme.bodyText2,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
               ],
             ),
@@ -313,7 +308,7 @@ class _DealerListState extends State<DealerList> {
         return Center(
           child: Text(
             'Loading...'.i18n,
-            style: Theme.of(context).textTheme.headline1,
+            style: Theme.of(context).textTheme.displayLarge,
           )
         );
       },

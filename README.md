@@ -29,5 +29,4 @@ Distributed under the terms of the open-source MIT license. See the file `LICENS
 ## Authors
 - Helgi Hrafn Gunnarsson <helgi@binary.is>
 
-Special thanks to the author's wife for suggesting the functionality.
-Regular thanks to Iceland's state-run alcohol monopoly for providing JSON data, generally excellent service and alcohol.
+Special thanks to Iceland's state-run alcohol monopoly for providing JSON data, generally excellent service and alcohol.

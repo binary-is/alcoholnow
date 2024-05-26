@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_settings_screens/flutter_settings_screens.dart';
 
 class Language {
   final String name;
