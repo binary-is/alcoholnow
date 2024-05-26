@@ -6,7 +6,6 @@ import '../constants.dart' as Constants;
 import '../timing_utils.dart';
 
 class OpeningHours {
-
   // We won't rely on conventions, but rather the actual known data. This is
   // simpler, more readable and possibly even more reliable than trying to
   // parse the input strings as Icelandic short-months with some library.
@@ -33,7 +32,6 @@ class OpeningHours {
   OpeningHours({required this.open, this.opens, this.closes});
 
   factory OpeningHours.fromPrimitive(json) {
-
     // Stop wasting time if we know it's closed.
     if (json['open'] == 'Lokað') {
       return OpeningHours(open: false);
@@ -46,7 +44,9 @@ class OpeningHours {
       return OpeningHours(open: false);
     }
     final int year = getNow().year;
-    final int month = IcelandicMonthMap[json['date'].substring(dot_index+2, dot_index+5)] ?? -1;
+    final int month = IcelandicMonthMap[
+            json['date'].substring(dot_index + 2, dot_index + 5)] ??
+        -1;
     final int day = int.parse(json['date'].substring(0, dot_index));
 
     // For example, the string "11 - 18" means that a dealer opens at 11:00 AM
@@ -78,8 +78,7 @@ class OpeningHours {
         opens: parsePrimitiveHour(primitive_hours[0]),
         closes: parsePrimitiveHour(primitive_hours[1]),
       );
-    }
-    else {
+    } else {
       // Null means that the dealer is not open at any time during the day.
       return OpeningHours(open: false);
     }
@@ -98,10 +97,15 @@ class Dealer {
   // Function cache.
   bool? _is_open = null;
 
-  Dealer({required this.name, required this.image_url, required this.today, required this.next_opening, required this.latitude, required this.longitude});
+  Dealer(
+      {required this.name,
+      required this.image_url,
+      required this.today,
+      required this.next_opening,
+      required this.latitude,
+      required this.longitude});
 
   factory Dealer.fromJson(Map<String, dynamic> json) {
-
     // Find the next day (after today) when it's open.
     OpeningHours next_opening = OpeningHours(open: false);
     for (var future_day = 1; future_day <= 7; future_day++) {
@@ -119,7 +123,6 @@ class Dealer {
     double latitude = 0.0;
     double longitude = 0.0;
     if (json['GPSN'].length > 0 && json['GPSW'].length > 0) {
-
       // Massage GPS data. It seems to sometimes be manually added and contain
       // some mistakes like stray spaces or some nonsense following a comma.
       String gpsn = json['GPSN'].trim();
@@ -147,7 +150,9 @@ class Dealer {
   bool isOpen() {
     if (this._is_open == null) {
       final now = getNow();
-      this._is_open = today.open && now.isAfter(today.opens ?? now) && now.isBefore(today.closes ?? now);
+      this._is_open = today.open &&
+          now.isAfter(today.opens ?? now) &&
+          now.isBefore(today.closes ?? now);
     }
     return this._is_open ?? false;
   }
@@ -159,20 +164,15 @@ class Dealer {
 }
 
 Future<List<Dealer>> fetchDealers() async {
-
   List list;
 
   if (Constants.DEV_USE_LOCAL_JSON) {
-    String json_string = await rootBundle.loadString('example-data/2020-08-02.json');
+    String json_string =
+        await rootBundle.loadString('example-data/2020-08-02.json');
     list = json.decode(json_string) as List;
-  }
-  else {
-    final response = await http.get(
-      Uri.parse(Constants.STORE_DATA_URL),
-      headers: {
-        'Content-Type': 'application/json; charset=utf-8'
-      }
-    );
+  } else {
+    final response = await http.get(Uri.parse(Constants.STORE_DATA_URL),
+        headers: {'Content-Type': 'application/json; charset=utf-8'});
 
     if (response.statusCode != 200) {
       throw HttpException(
@@ -187,7 +187,8 @@ Future<List<Dealer>> fetchDealers() async {
     list = json.decode(json.decode(response.body)['d']) as List;
   }
 
-  final List<Dealer> dealers = list.map((item) => Dealer.fromJson(item)).toList();
+  final List<Dealer> dealers =
+      list.map((item) => Dealer.fromJson(item)).toList();
 
   return dealers;
 }

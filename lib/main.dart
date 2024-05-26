@@ -15,9 +15,9 @@ void main() async {
 class AlcoholNowApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     final String languageTag = Settings.getValue('languageTag') ?? '';
-    final Locale? locale = getLocaleByLanguageTag(languageTag) ?? Constants.DEFAULT_LOCALE;
+    final Locale? locale =
+        getLocaleByLanguageTag(languageTag) ?? Constants.DEFAULT_LOCALE;
 
     return I18n(
       initialLocale: locale,

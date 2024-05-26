@@ -8,8 +8,8 @@ import '../language.dart';
 class SettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
-    final String languageTag = Settings.getValue('languageTag') ?? Constants.DEFAULT_LOCALE.toLanguageTag();
+    final String languageTag = Settings.getValue('languageTag') ??
+        Constants.DEFAULT_LOCALE.toLanguageTag();
 
     int selectedValue = getLanguageTagOrder(languageTag) + 1;
 
@@ -28,7 +28,8 @@ class SettingsPage extends StatelessWidget {
             title: 'Language'.i18n,
             settingKey: 'language',
             values: <int, String>{
-              for (int i = 0; i < languages.length; i++) i + 1: languages[i].name
+              for (int i = 0; i < languages.length; i++)
+                i + 1: languages[i].name
             },
             //selected: selectedValue,
             selected: selectedValue,
