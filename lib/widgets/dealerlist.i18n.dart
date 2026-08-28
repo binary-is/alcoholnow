@@ -1,66 +1,66 @@
 import 'package:i18n_extension/i18n_extension.dart';
 
 extension Localization on String {
-  static final _t = Translations.byText('en_us') +
+  static final _t = Translations.byText('en-US') +
       {
-        'en_us': 'Loading...',
-        'is_is': 'Hleð...',
+        'en-US': 'Loading...',
+        'is-IS': 'Hleð...',
       } +
       {
-        'en_us': 'Open!',
-        'is_is': 'Opið!',
+        'en-US': 'Open!',
+        'is-IS': 'Opið!',
       } +
       {
-        'en_us': 'Opens later today!',
-        'is_is': 'Opnar seinna í dag!',
+        'en-US': 'Opens later today!',
+        'is-IS': 'Opnar seinna í dag!',
       } +
       {
-        'en_us': 'Opens on %s at %s.',
-        'is_is': 'Opnar %s kl. %s.',
+        'en-US': 'Opens on %s at %s.',
+        'is-IS': 'Opnar %s kl. %s.',
       } +
       {
-        'en_us': 'Closed!',
-        'is_is': 'Lokað!',
+        'en-US': 'Closed!',
+        'is-IS': 'Lokað!',
       } +
       {
-        'en_us': 'Opens at %s and closes at %s.',
-        'is_is': 'Opnar kl. %s og lokar kl. %s.',
+        'en-US': 'Opens at %s and closes at %s.',
+        'is-IS': 'Opnar kl. %s og lokar kl. %s.',
       } +
       {
-        'en_us': 'Closes at %s.',
-        'is_is': 'Lokar kl. %s.',
+        'en-US': 'Closes at %s.',
+        'is-IS': 'Lokar kl. %s.',
       } +
       {
-        'en_us': 'Closed at %s.',
-        'is_is': 'Lokaði kl. %s.',
+        'en-US': 'Closed at %s.',
+        'is-IS': 'Lokaði kl. %s.',
       } +
       {
-        'en_us': 'Closed all day.',
-        'is_is': 'Lokað í allan dag.',
+        'en-US': 'Closed all day.',
+        'is-IS': 'Lokað í allan dag.',
       } +
       {
-        'en_us': '%s away.',
-        'is_is': 'Í %s fjarlægð.',
+        'en-US': '%s away.',
+        'is-IS': 'Í %s fjarlægð.',
       } +
       {
-        'en_us': '%s meters',
-        'is_is': '%s metra',
+        'en-US': '%s meters',
+        'is-IS': '%s metra',
       } +
       {
-        'en_us': '%s kilometers',
-        'is_is': '%s kílómetra',
+        'en-US': '%s kilometers',
+        'is-IS': '%s kílómetra',
       } +
       {
-        'en_us': 'Error:',
-        'is_is': 'Villa:',
+        'en-US': 'Error:',
+        'is-IS': 'Villa:',
       } +
       {
-        'en_us': 'Remote server is drunk.',
-        'is_is': 'Netþjónninn er ölvaður.',
+        'en-US': 'Remote server is drunk.',
+        'is-IS': 'Netþjónninn er ölvaður.',
       } +
       {
-        'en_us': 'The internet broke or something.',
-        'is_is': 'Internetið er eitthvað beyglað.',
+        'en-US': 'The internet broke or something.',
+        'is-IS': 'Internetið er eitthvað beyglað.',
       };
 
   String get i18n => localize(this, _t);

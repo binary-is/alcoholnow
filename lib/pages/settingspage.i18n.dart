@@ -1,14 +1,14 @@
 import 'package:i18n_extension/i18n_extension.dart';
 
 extension Localization on String {
-  static final _t = Translations.byText('en_us') +
+  static final _t = Translations.byText('en-US') +
       {
-        'en_us': 'Settings',
-        'is_is': 'Stillingar',
+        'en-US': 'Settings',
+        'is-IS': 'Stillingar',
       } +
       {
-        'en_us': 'Language',
-        'is_is': 'Tungumál',
+        'en-US': 'Language',
+        'is-IS': 'Tungumál',
       };
 
   String get i18n => localize(this, _t);
